@@ -4258,6 +4258,7 @@ footer .container .links .text-2 {
   .swiper-slide-active {
     -webkit-transform: scale(1);
             transform: scale(1);
+    margin: 0 15px;
   }
   .swiper-slide .slide_conatiner {
     width: 100%;

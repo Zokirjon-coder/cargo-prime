@@ -9,13 +9,15 @@ const links = document.querySelector(".links");
 const search_menu = document.querySelector(".search_menu");
 
 search_input.addEventListener("input", (e) => {
-  if (e.target.value.length > 0) search_place.querySelector("img").classList.remove("hidden");
+  if (e.target.value.length > 0)
+    search_place.querySelector("img").classList.remove("hidden");
   else if (!search_place.querySelector("img").classList.contains("hidden"))
     search_place.querySelector("img").classList.add("hidden");
 });
 
 search_menu.addEventListener("input", (e) => {
-  if (e.target.value.length > 0) search_menu.querySelector("img").classList.remove("hidden");
+  if (e.target.value.length > 0)
+    search_menu.querySelector("img").classList.remove("hidden");
   else if (!search_menu.querySelector("img").classList.contains("hidden"))
     search_menu.querySelector("img").classList.add("hidden");
 });
@@ -75,6 +77,8 @@ wrapper.addEventListener("scroll", (e) => {
   });
 });
 
+// let spaceB = window.innerWidth > 500 ? 0:30;
+
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 0,
@@ -82,6 +86,9 @@ const swiper = new Swiper(".mySwiper", {
   centeredSlides: true,
   grubCursor: true,
   loop: true,
+  observer: true,
+  observerParents: true,
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -92,38 +99,37 @@ const swiper = new Swiper(".mySwiper", {
   },
 });
 
- ymaps.ready(init);
- function init() {
-   var myMap = new ymaps.Map("map", {
-     center: [55.76, 37.64],
-     zoom: 7,
-   });
- }
+ymaps.ready(init);
+function init() {
+  var myMap = new ymaps.Map("map", {
+    center: [55.76, 37.64],
+    zoom: 7,
+  });
+}
 
 //  floating menu settings
- const float_menu = document.querySelector(".float_menu");
- const hamburger_btn = document.querySelector(".hamburger_btn");
- const menu_close = document.querySelector(".menu_close");
- const float_menus = float_menu.querySelectorAll(".menu_item");
+const float_menu = document.querySelector(".float_menu");
+const hamburger_btn = document.querySelector(".hamburger_btn");
+const menu_close = document.querySelector(".menu_close");
+const float_menus = float_menu.querySelectorAll(".menu_item");
 
+hamburger_btn.addEventListener("click", () => {
+  float_menu.classList.add("opened");
+});
 
- hamburger_btn.addEventListener("click", () => {
-   float_menu.classList.add("opened");
- });
+float_menu.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
 
- float_menu.addEventListener("click", e=>{
-   e.stopPropagation()
- })
+const closeMenu = () => {
+  float_menu.classList.remove("opened");
+};
 
- const closeMenu=()=>{
-   float_menu.classList.remove("opened")
- }
+menu_close.addEventListener("click", (e) => {
+  e.stopPropagation();
+  closeMenu();
+});
 
- menu_close.addEventListener("click", (e)=>{
-   e.stopPropagation();
-   closeMenu()
-  });
-
-float_menus.forEach(menu => {
-  menu.addEventListener("click", closeMenu)
+float_menus.forEach((menu) => {
+  menu.addEventListener("click", closeMenu);
 });
