@@ -9,12 +9,24 @@
       href="./assets/icons/logo.svg"
       type="image/x-icon"
     />
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    /> -->
-    <link rel="stylesheet" href="./css/swiper.css" />
+    />
+    <!-- <link rel="stylesheet" href="./css/swiper.css" /> -->
+
     <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- Add animate from gsap -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"
+      integrity="sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Add animate from gsap -->
     <title>CARGO PRIME</title>
   </head>
   <body>
@@ -24,7 +36,7 @@
           <div class="menu_header">
             <div class="logo">
               <a href="#home" onclick="closeMenu()">
-                <img src="./assets/icons/header_logo.svg" alt="logo" />
+                <img src="./assets/images/Asset 1@2x.png" alt="logo" />
               </a>
             </div>
             <div class="search_menu">
@@ -382,7 +394,7 @@
       <div class="navigation_section">
         <div class="navigation">
           <a href="#home" title="home" class="nav_btn active">
-            <div class="img">
+            <div class="img gs_flipLeft">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="36.971"
@@ -402,10 +414,10 @@
                 </g>
               </svg>
             </div>
-            <div class="btn_indecator"></div>
+            <div class="btn_indecator gs_flipRight"></div>
           </a>
           <a href="#story" title="story" class="nav_btn">
-            <div class="img">
+            <div class="img gs_flipLeft">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="31.953"
@@ -442,10 +454,10 @@
                 </g>
               </svg>
             </div>
-            <div class="btn_indecator"></div>
+            <div class="btn_indecator gs_flipRight"></div>
           </a>
           <a href="#service" title="service" class="nav_btn">
-            <div class="img">
+            <div class="img gs_flipLeft">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="36.971"
@@ -467,10 +479,10 @@
                 </g>
               </svg>
             </div>
-            <div class="btn_indecator"></div>
+            <div class="btn_indecator gs_flipRight"></div>
           </a>
           <a href="#choose" title="choose" class="nav_btn">
-            <div class="img">
+            <div class="img gs_flipLeft">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="36.971"
@@ -492,10 +504,10 @@
                 </g>
               </svg>
             </div>
-            <div class="btn_indecator"></div>
+            <div class="btn_indecator gs_flipRight"></div>
           </a>
           <a href="#info" title="info" class="nav_btn">
-            <div class="img">
+            <div class="img gs_flipLeft">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="36.971"
@@ -519,10 +531,10 @@
                 </g>
               </svg>
             </div>
-            <div class="btn_indecator"></div>
+            <div class="btn_indecator gs_flipRight"></div>
           </a>
           <a href="#quote" title="quote" class="nav_btn">
-            <div class="img">
+            <div class="img gs_flipLeft">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="36.971"
@@ -544,7 +556,7 @@
                 </g>
               </svg>
             </div>
-            <div class="btn_indecator"></div>
+            <div class="btn_indecator gs_flipRight"></div>
           </a>
         </div>
         <div class="chat">
@@ -555,9 +567,9 @@
       <section id="home">
         <header class="header">
           <nav>
-            <div class="logo">
+            <div class="logo gs_scalabe">
               <a href="#home"
-                ><img src="./assets/icons/header_logo.svg" alt="logo"
+                ><img src="./assets/images/Asset 1@2x.png" alt="logo"
               /></a>
             </div>
             <div class="btns">
@@ -565,8 +577,8 @@
                 <div class="links_place">
                   <div class="links">
                     <div class="link" id="link">
-                      <a href="#" class="btn join">DRIVER APPLICATION</a>
-                      <a href="#quote" class="btn quote">GET A QUOTE</a>
+                      <a href="#" class="btn join gs_scalabe">DRIVER APPLICATION</a>
+                      <a href="#quote" class="btn quote gs_scalabe">GET A QUOTE</a>
                     </div>
                     <div class="tel" id="tell">
                       <a class="btn" href="tel:+14844270678">+1 484-427-0678</a>
@@ -575,7 +587,7 @@
                       >
                     </div>
                   </div>
-                  <div class="call">
+                  <div class="call gs_scalabe">
                     <img src="./assets/icons/call.svg" alt="call" />
                     <img
                       class="hidden"
@@ -595,11 +607,11 @@
                   />
                 </div>
               </div>
-              <div class="search_btn">
+              <div class="search_btn gs_scalabe">
                 <img src="./assets/icons/search.svg" alt="search" />
                 <img src="./assets/icons/close.svg" width="20" alt="close" />
               </div>
-              <div class="hamburger_btn">
+              <div class="hamburger_btn gs_scalabe">
                 <img src="./assets/icons/hamburger.svg" alt="menu" /> Menu
               </div>
             </div>
@@ -607,72 +619,78 @@
         </header>
         <div class="container">
           <div class="banner">
-            <h1>cargo</h1>
-            <h1>prime</h1>
+            <h1 class=" gs_reveal gs_reveal_fromTop">cargo</h1>
+            <h1 class=" gs_reveal gs_reveal_fromTop">prime</h1>
+
+            <div class="text  gs_reveal gs_reveal_fromTop">
+              <p>
+                WE’VE GOT THE TRANSPORTATION SOLUTIONS TO MEET YOUR NEEDS. OUR
+                BUSINESS IS BUILT ON TRUSTWORTHY RELATIONSHIPS. THAT IS HOW WE
+                DELIVER MAXIMUM VALUE AND EXCEPTIONAL SERVICE EVERY TIME!
+              </p>
+            </div>
+            <div class="links">
+              <a href="#" class="btn  gs_reveal gs_reveal_fromBottom">DRIVER APPLICATION</a>
+              <a href="tel: +14124448989" class="btn nobg  gs_reveal gs_reveal_fromBottom">CALL A RECRUITER</a>
+            </div>
           </div>
-          <div class="text">
-            <p>
-              WE’VE GOT THE TRANSPORTATION SOLUTIONS TO MEET YOUR NEEDS. OUR
-              BUSINESS IS BUILT ON TRUSTWORTHY RELATIONSHIPS. THAT IS HOW WE
-              DELIVER MAXIMUM VALUE AND EXCEPTIONAL SERVICE EVERY TIME!
-            </p>
-          </div>
-          <div class="links">
-            <a href="#" class="btn">DRIVER APPLICATION</a>
-            <a href="tel: +14124448989" class="btn nobg">CALL A RECRUITER</a>
+          <div class="banner_img  gs_reveal gs_reveal_fromBottom">
+            <img src="./assets/images/truck-img.png" alt="" />
           </div>
         </div>
         <div class="section_footer">
-          <img class="down_arrow" src="./assets/icons/downarrow.svg" alt="" />
+          <img class="down_arrow gs_reveal gs_reveal_fromTop" src="./assets/icons/downarrow.svg" alt="" />
           <img class="bgraund" src="./assets/images/surface.png" alt="" />
         </div>
       </section>
       <section id="story">
         <div class="container">
-          <div class="text">
-            <h1>our story</h1>
-            <p>
-              CargoPrime corparation is a transportation company that was
-              established in Pittsburgh, PA in 2018. Our company acknowledges
-              the strong potential of the trucking industry to make a big impact
-              on business and society. Our management team with 15 years of
-              transportation experience and professional drivers work to meet
-              your needs and provide excellent customer service.
-            </p>
-            <p>
-              CargoPrime corparation provides a flexible solution, on-time
-              service, safe and experienced drivers, tracking on expedited
-              services. We promise to provide world-class transportation
-              services and ensure your freight is delivered on schedule and
-              straight to the designated destination. Our goal is your
-              satisfaction with our services. We welcome you to check out our
-              website and discover our services: Freight transportation, CDL
-              Drivers, Employee job opportunities.
-            </p>
-          </div>
-          <div class="video">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/eXTQNzhXJso"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+          <h1 class="gs_reveal gs_reveal_fromLeft">our story</h1>
+          <div class="flex align-center justify-between">
+            <div class="text">
+              <p class="gs_reveal gs_reveal_fromLeft">
+                CargoPrime corparation is a transportation company that was
+                established in Pittsburgh, PA in 2018. Our company acknowledges
+                the strong potential of the trucking industry to make a big
+                impact on business and society. Our management team with 15
+                years of transportation experience and professional drivers work
+                to meet your needs and provide excellent customer service.
+              </p>
+              <p class="gs_reveal gs_reveal_fromLeft">
+                CargoPrime corparation provides a flexible solution, on-time
+                service, safe and experienced drivers, tracking on expedited
+                services. We promise to provide world-class transportation
+                services and ensure your freight is delivered on schedule and
+                straight to the designated destination. Our goal is your
+                satisfaction with our services. We welcome you to check out our
+                website and discover our services: Freight transportation, CDL
+                Drivers, Employee job opportunities.
+              </p>
+            </div>
+            <div class="video gs_reveal gs_reveal_fromRight">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/eXTQNzhXJso"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </div>
-        <img class="down_arrow" src="./assets/icons/downarrow.svg" alt="" />
+        <img class="lazy down_arrow gs_reveal gs_reveal_fromTop" src="./assets/icons/downarrow.svg" alt="" />
       </section>
       <section id="service">
         <div class="container">
           <div class="content">
             <div class="title">
-              <img src="./assets/icons/service.svg" alt="" />
-              <h1>our service</h1>
+              <img class="gs_reveal gs_reveal_fromTop" src="./assets/icons/service.svg" alt="" />
+              <h1 class="gs_reveal gs_reveal_fromTransparent">our service</h1>
             </div>
             <div class="text">
-              <p>
+              <p class="gs_reveal gs_reveal_fromLeft">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Accusantium neque ipsam rerum provident odio? Ullam tempora
                 numquam quidem distinctio! Nesciunt, laborum ratione. Harum
@@ -682,7 +700,7 @@
                 Quod suscipit similique quo. Incidunt, expedita ipsum. Totam
                 sapiente ea error quasi deserunt.
               </p>
-              <p>
+              <p class="gs_reveal gs_reveal_fromBottom">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
                 aliquid inventore sed dolores. Repellat repellendus eius soluta
                 tempore molestias praesentium porro rerum error ipsam, mollitia
@@ -692,7 +710,7 @@
                 dolor pariatur quam, nobis libero numquam deleniti praesentium
                 obcaecati animi? Tenetur.
               </p>
-              <p>
+              <p class="gs_reveal gs_reveal_fromRight">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
                 aliquid inventore sed dolores. Repellat repellendus eius soluta
                 tempore molestias praesentium porro rerum error ipsam, mollitia
@@ -705,18 +723,18 @@
             </div>
           </div>
         </div>
-        <img class="down_arrow" src="./assets/icons/downarrow.svg" alt="" />
+        <img class="down_arrow gs_reveal gs_reveal_fromTop" src="./assets/icons/downarrow.svg" alt="" />
       </section>
       <section id="choose">
         <div class="container">
           <div class="banner">
             <div class="title">
-              <h1>why people choose us?</h1>
+              <h1 class="gs_reveal gs_reveal_fromTop">why people choose us?</h1>
             </div>
             <div class="cards">
               <div class="box_card down">
-                <div class="title">INDUSTRY LEADERSHIP</div>
-                <div class="card">
+                <div class="title  gs_reveal gs_reveal_fromTransparent">INDUSTRY LEADERSHIP</div>
+                <div class="card  gs_reveal gs_reveal_fromLeft" data-tilt>
                   <div class="img">
                     <img src="./assets/icons/card_1.svg" alt="1232" />
                   </div>
@@ -730,8 +748,8 @@
                 </div>
               </div>
               <div class="box_card">
-                <div class="title">TECHNOLOGY</div>
-                <div class="card">
+                <div class="title  gs_reveal gs_reveal_fromTransparent">TECHNOLOGY</div>
+                <div class="card  gs_reveal gs_reveal_fromBottom" data-tilt>
                   <div class="img">
                     <img src="./assets/icons/card_2.svg" alt="" />
                   </div>
@@ -745,8 +763,8 @@
                 </div>
               </div>
               <div class="box_card down">
-                <div class="title">EXCEPTIONAL CUSTOMER SERVICE</div>
-                <div class="card">
+                <div class="title  gs_reveal gs_reveal_fromTransparent">EXCEPTIONAL CUSTOMER SERVICE</div>
+                <div class="card  gs_reveal gs_reveal_fromRight" data-tilt>
                   <div class="img">
                     <img src="./assets/icons/card_3.svg" alt="" />
                   </div>
@@ -762,32 +780,32 @@
             </div>
           </div>
         </div>
-        <img class="down_arrow" src="./assets/icons/downarrow.svg" alt="" />
+        <img class="down_arrow gs_reveal gs_reveal_fromTop" src="./assets/icons/downarrow.svg" alt="" />
       </section>
       <section id="info">
         <div class="container">
           <div class="banner">
             <div class="info_company">
               <div class="truks_info">
-                <div class="numbers">300+</div>
+                <div class="numbers" last="300"><span class="counting">300</span>+</div>
                 <div class="img">
-                  <img src="./assets/icons/truck.svg" alt="" />
+                  <img class="gs_reveal gs_reveal_fromScale" src="./assets/icons/truck.svg" alt="" />
                 </div>
-                <div class="text">TRUCKS ON THE ROAD</div>
+                <div class="text gs_reveal gs_reveal_fromBottom">TRUCKS ON THE ROAD</div>
               </div>
               <div class="life_info">
-                <div class="numbers">15+</div>
+                <div class="numbers" last="15"><span class="counting">15</span>+</div>
                 <div class="img">
-                  <img src="./assets/icons/life.svg" alt="" />
+                  <img class="gs_reveal gs_reveal_fromScale" src="./assets/icons/life.svg" alt="" />
                 </div>
-                <div class="text">YEARS ON MARKET</div>
+                <div class="text gs_reveal gs_reveal_fromBottom">YEARS ON MARKET</div>
               </div>
               <div class="employe_info">
-                <div class="numbers">400+</div>
+                <div class="numbers" last="400"><span class="counting">400</span>+</div>
                 <div class="img">
-                  <img src="./assets/icons/empolye.svg" alt="" />
+                  <img class="gs_reveal gs_reveal_fromScale" src="./assets/icons/empolye.svg" alt="" />
                 </div>
-                <div class="text">EMPLOYEES</div>
+                <div class="text gs_reveal gs_reveal_fromBottom">EMPLOYEES</div>
               </div>
             </div>
           </div>
@@ -795,17 +813,17 @@
         <div class="section_footer">
           <div class="down_arrow">
             <img
-              class="down_arrow_img"
+              class="down_arrow_img gs_reveal gs_reveal_fromTop"
               src="./assets/icons/downarrow.svg"
               alt=""
             />
             <img
-              class="down_arrow_img"
+              class="down_arrow_img gs_reveal gs_reveal_fromTop"
               src="./assets/icons/downarrow.svg"
               alt=""
             />
             <img
-              class="down_arrow_img"
+              class="down_arrow_img gs_reveal gs_reveal_fromTop"
               src="./assets/icons/downarrow.svg"
               alt=""
             />
@@ -814,30 +832,30 @@
         </div>
         <div class="container">
           <div class="partners">
-            <div class="title">
+            <div class="title gs_reveal gs_reveal_fromTop">
               <h1>PARTNERS WHO WORKS WITH US</h1>
             </div>
             <div class="partners_row">
-              <img src="./assets/icons/amazon.svg" alt="" />
-              <img src="./assets/icons/ups.svg" alt="" />
-              <img src="./assets/icons/fedex.svg" alt="" />
-              <img src="./assets/icons/silchuk.svg" alt="" />
+              <img class="gs_reveal gs_reveal_fromBottom" src="./assets/icons/amazon.svg" alt="" />
+              <img class="gs_reveal gs_reveal_fromBottom" src="./assets/icons/ups.svg" alt="" />
+              <img class="gs_reveal gs_reveal_fromBottom" src="./assets/icons/fedex.svg" alt="" />
+              <img class="gs_reveal gs_reveal_fromBottom" src="./assets/icons/silchuk.svg" alt="" />
             </div>
             <div class="partners_row">
-              <img src="./assets/icons/pepsi.svg" alt="" />
-              <img src="./assets/icons/landstar.svg" alt="" />
-              <img src="./assets/icons/hubgroup.svg" alt="" />
+              <img class="gs_reveal gs_reveal_fromBottom" src="./assets/icons/pepsi.svg" alt="" />
+              <img class="gs_reveal gs_reveal_fromBottom" src="./assets/icons/landstar.svg" alt="" />
+              <img class="gs_reveal gs_reveal_fromBottom" src="./assets/icons/hubgroup.svg" alt="" />
             </div>
             <div class="partners_row">
-              <img src="./assets/icons/hunt.svg" alt="" />
+              <img class="gs_reveal gs_reveal_fromBottom" src="./assets/icons/hunt.svg" alt="" />
             </div>
           </div>
         </div>
         <div class="testimonials_container">
-          <div class="title">
-            <h1>WHAT PEOPLE THINK ABOUT US</h1>
+          <div class="title gs_reveal gs_reveal_fromTop">
+            <h1>WHAT PEOPLE THINK ABOUT US?</h1>
           </div>
-          <div class="testimonials">
+          <div class="testimonials gs_reveal gs_reveal_fromTransparent">
             <div class="slider">
               <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -845,16 +863,137 @@
                     <div class="slide_conatiner">
                       <div class="avatar"></div>
                       <div class="slide_content">
-                        <div class="name">Abdurashib Ibaydullayev</div>
+                        <div class="name">Abdurashid Ibaydullayev</div>
                         <div class="slide_text">
                           Lorem ipsum dolor sit amet, consectetuer adipiscing
                           elit, sed diam nonummy nibh euismod tincidunt ut
                           laoreet dolore magna.
                         </div>
                         <div class="socials">
-                          <img src="./assets/icons/gplus.svg" alt="" />
-                          <img src="./assets/icons/fbook.svg" alt="" />
-                          <img src="./assets/icons/insta.svg" alt="" />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="29.631"
+                            height="29.631"
+                            viewBox="0 0 29.631 29.631"
+                          >
+                            <g
+                              id="Group_173"
+                              data-name="Group 173"
+                              transform="translate(-945.195 -7200.826)"
+                            >
+                              <g id="Group_169" data-name="Group 169">
+                                <path
+                                  id="Path_245"
+                                  data-name="Path 245"
+                                  d="M960.01,7230.457a14.815,14.815,0,1,1,14.816-14.816A14.833,14.833,0,0,1,960.01,7230.457Zm0-28.508a13.692,13.692,0,1,0,13.693,13.692A13.708,13.708,0,0,0,960.01,7201.949Z"
+                                  fill="#222221"
+                                />
+                              </g>
+                              <g id="Group_172" data-name="Group 172">
+                                <g id="Group_170" data-name="Group 170">
+                                  <path
+                                    id="Path_246"
+                                    data-name="Path 246"
+                                    d="M961.792,7215.27h-5.759l.007,1.649h3.883a3.811,3.811,0,0,1-3.779,3.24,4.518,4.518,0,1,1,3.071-7.83l1.275-1.1a6.192,6.192,0,1,0-4.346,10.6,5.609,5.609,0,0,0,5.657-5.925Z"
+                                    fill="#222221"
+                                  />
+                                </g>
+                                <g id="Group_171" data-name="Group 171">
+                                  <path
+                                    id="Path_247"
+                                    data-name="Path 247"
+                                    d="M970.069,7215.338h-2.377v-2.377h-1.517v2.377H963.8v1.517h2.377v2.377h1.517v-2.377h2.377Z"
+                                    fill="#222221"
+                                  />
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="29.631"
+                            height="29.631"
+                            viewBox="0 0 29.631 29.631"
+                          >
+                            <g
+                              id="Group_176"
+                              data-name="Group 176"
+                              transform="translate(-986.467 -7200.826)"
+                            >
+                              <g id="Group_174" data-name="Group 174">
+                                <path
+                                  id="Path_248"
+                                  data-name="Path 248"
+                                  d="M1001.283,7230.457a14.815,14.815,0,1,1,14.815-14.816A14.834,14.834,0,0,1,1001.283,7230.457Zm0-28.508a13.692,13.692,0,1,0,13.692,13.692A13.708,13.708,0,0,0,1001.283,7201.949Z"
+                                  fill="#222221"
+                                />
+                              </g>
+                              <g id="Group_175" data-name="Group 175">
+                                <path
+                                  id="Path_249"
+                                  data-name="Path 249"
+                                  d="M999.111,7224.257h3.47v-8.689H1005l.259-2.909h-2.679V7211c0-.686.137-.957.8-.957h1.878v-3.019h-2.4c-2.582,0-3.746,1.137-3.746,3.313v2.32h-1.8v2.945h1.8Z"
+                                  fill="#222221"
+                                />
+                              </g>
+                            </g>
+                          </svg>
+
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="29.631"
+                            height="29.63"
+                            viewBox="0 0 29.631 29.63"
+                          >
+                            <g
+                              id="Group_183"
+                              data-name="Group 183"
+                              transform="translate(-1028.212 -7200.827)"
+                            >
+                            
+                            <path
+                            class="strok"
+                                id="Path_250"
+                                data-name="Path 250"
+                                d="M1043.028,7229.9h0a14.254,14.254,0,0,1-14.254-14.254h0a14.253,14.253,0,0,1,14.254-14.253h0a14.253,14.253,0,0,1,14.254,14.253h0A14.254,14.254,0,0,1,1043.028,7229.9Z"
+                                fill="none"
+                                stroke="#222221"
+                                stroke-miterlimit="10"
+                                stroke-width="1.123"
+                              />
+                              <g id="Group_182" data-name="Group 182">
+                                <g id="Group_178" data-name="Group 178">
+                                  <g id="Group_177" data-name="Group 177">
+                                    <path
+                                      id="Path_251"
+                                      data-name="Path 251"
+                                      d="M1043.028,7209.234c2.087,0,2.334.008,3.158.046a4.307,4.307,0,0,1,1.451.269,2.579,2.579,0,0,1,1.483,1.483,4.3,4.3,0,0,1,.27,1.451c.037.824.045,1.072.045,3.158s-.008,2.334-.045,3.158a4.308,4.308,0,0,1-.27,1.452,2.587,2.587,0,0,1-1.483,1.483,4.333,4.333,0,0,1-1.451.269c-.824.038-1.071.045-3.158.045s-2.334-.007-3.158-.045a4.334,4.334,0,0,1-1.451-.269,2.593,2.593,0,0,1-1.484-1.483,4.34,4.34,0,0,1-.269-1.452c-.037-.824-.045-1.071-.045-3.158s.008-2.334.045-3.158a4.332,4.332,0,0,1,.269-1.451,2.584,2.584,0,0,1,1.484-1.483,4.309,4.309,0,0,1,1.451-.269c.824-.038,1.071-.046,3.158-.046m0-1.408c-2.123,0-2.389.009-3.222.047a5.747,5.747,0,0,0-1.9.363,4,4,0,0,0-2.286,2.286,5.74,5.74,0,0,0-.363,1.9c-.038.834-.047,1.1-.047,3.222s.009,2.389.047,3.223a5.749,5.749,0,0,0,.363,1.9,3.99,3.99,0,0,0,2.286,2.285,5.705,5.705,0,0,0,1.9.364c.833.038,1.1.047,3.222.047s2.389-.009,3.222-.047a5.705,5.705,0,0,0,1.9-.364,3.99,3.99,0,0,0,2.286-2.285,5.749,5.749,0,0,0,.363-1.9c.038-.834.047-1.1.047-3.223s-.009-2.388-.047-3.222a5.74,5.74,0,0,0-.363-1.9,4,4,0,0,0-2.286-2.286,5.747,5.747,0,0,0-1.9-.363c-.833-.038-1.1-.047-3.222-.047"
+                                      fill="#222221"
+                                    />
+                                  </g>
+                                </g>
+                                <g id="Group_180" data-name="Group 180">
+                                  <g id="Group_179" data-name="Group 179">
+                                    <path
+                                      id="Path_252"
+                                      data-name="Path 252"
+                                      d="M1043.028,7211.628a4.013,4.013,0,1,0,4.013,4.013,4.013,4.013,0,0,0-4.013-4.013m0,6.618a2.6,2.6,0,1,1,2.605-2.6,2.6,2.6,0,0,1-2.605,2.6"
+                                      fill="#222221"
+                                    />
+                                  </g>
+                                </g>
+                                <g id="Group_181" data-name="Group 181">
+                                  <path
+                                    id="Path_253"
+                                    data-name="Path 253"
+                                    d="M1048.138,7211.469a.938.938,0,1,1-.938-.937.938.938,0,0,1,.938.937"
+                                    fill="#222221"
+                                  />
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
                         </div>
                       </div>
                     </div>
@@ -863,16 +1002,136 @@
                     <div class="slide_conatiner">
                       <div class="avatar"></div>
                       <div class="slide_content">
-                        <div class="name">Abdurashib Ibaydullayev</div>
+                        <div class="name">Abdurashid Ibaydullayev</div>
                         <div class="slide_text">
                           Lorem ipsum dolor sit amet, consectetuer adipiscing
                           elit, sed diam nonummy nibh euismod tincidunt ut
                           laoreet dolore magna.
                         </div>
                         <div class="socials">
-                          <img src="./assets/icons/gplus.svg" alt="" />
-                          <img src="./assets/icons/fbook.svg" alt="" />
-                          <img src="./assets/icons/insta.svg" alt="" />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="29.631"
+                            height="29.631"
+                            viewBox="0 0 29.631 29.631"
+                          >
+                            <g
+                              id="Group_173"
+                              data-name="Group 173"
+                              transform="translate(-945.195 -7200.826)"
+                            >
+                              <g id="Group_169" data-name="Group 169">
+                                <path
+                                  id="Path_245"
+                                  data-name="Path 245"
+                                  d="M960.01,7230.457a14.815,14.815,0,1,1,14.816-14.816A14.833,14.833,0,0,1,960.01,7230.457Zm0-28.508a13.692,13.692,0,1,0,13.693,13.692A13.708,13.708,0,0,0,960.01,7201.949Z"
+                                  fill="#222221"
+                                />
+                              </g>
+                              <g id="Group_172" data-name="Group 172">
+                                <g id="Group_170" data-name="Group 170">
+                                  <path
+                                    id="Path_246"
+                                    data-name="Path 246"
+                                    d="M961.792,7215.27h-5.759l.007,1.649h3.883a3.811,3.811,0,0,1-3.779,3.24,4.518,4.518,0,1,1,3.071-7.83l1.275-1.1a6.192,6.192,0,1,0-4.346,10.6,5.609,5.609,0,0,0,5.657-5.925Z"
+                                    fill="#222221"
+                                  />
+                                </g>
+                                <g id="Group_171" data-name="Group 171">
+                                  <path
+                                    id="Path_247"
+                                    data-name="Path 247"
+                                    d="M970.069,7215.338h-2.377v-2.377h-1.517v2.377H963.8v1.517h2.377v2.377h1.517v-2.377h2.377Z"
+                                    fill="#222221"
+                                  />
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="29.631"
+                            height="29.631"
+                            viewBox="0 0 29.631 29.631"
+                          >
+                            <g
+                              id="Group_176"
+                              data-name="Group 176"
+                              transform="translate(-986.467 -7200.826)"
+                            >
+                              <g id="Group_174" data-name="Group 174">
+                                <path
+                                  id="Path_248"
+                                  data-name="Path 248"
+                                  d="M1001.283,7230.457a14.815,14.815,0,1,1,14.815-14.816A14.834,14.834,0,0,1,1001.283,7230.457Zm0-28.508a13.692,13.692,0,1,0,13.692,13.692A13.708,13.708,0,0,0,1001.283,7201.949Z"
+                                  fill="#222221"
+                                />
+                              </g>
+                              <g id="Group_175" data-name="Group 175">
+                                <path
+                                  id="Path_249"
+                                  data-name="Path 249"
+                                  d="M999.111,7224.257h3.47v-8.689H1005l.259-2.909h-2.679V7211c0-.686.137-.957.8-.957h1.878v-3.019h-2.4c-2.582,0-3.746,1.137-3.746,3.313v2.32h-1.8v2.945h1.8Z"
+                                  fill="#222221"
+                                />
+                              </g>
+                            </g>
+                          </svg>
+
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="29.631"
+                            height="29.63"
+                            viewBox="0 0 29.631 29.63"
+                          >
+                            <g
+                              id="Group_183"
+                              data-name="Group 183"
+                              transform="translate(-1028.212 -7200.827)"
+                            >
+                              <path 
+                                class="strok"
+                                id="Path_250"
+                                data-name="Path 250"
+                                d="M1043.028,7229.9h0a14.254,14.254,0,0,1-14.254-14.254h0a14.253,14.253,0,0,1,14.254-14.253h0a14.253,14.253,0,0,1,14.254,14.253h0A14.254,14.254,0,0,1,1043.028,7229.9Z"
+                                fill="none"
+                                stroke="#222221"
+                                stroke-miterlimit="10"
+                                stroke-width="1.123"
+                              />
+                              <g id="Group_182" data-name="Group 182">
+                                <g id="Group_178" data-name="Group 178">
+                                  <g id="Group_177" data-name="Group 177">
+                                    <path
+                                      id="Path_251"
+                                      data-name="Path 251"
+                                      d="M1043.028,7209.234c2.087,0,2.334.008,3.158.046a4.307,4.307,0,0,1,1.451.269,2.579,2.579,0,0,1,1.483,1.483,4.3,4.3,0,0,1,.27,1.451c.037.824.045,1.072.045,3.158s-.008,2.334-.045,3.158a4.308,4.308,0,0,1-.27,1.452,2.587,2.587,0,0,1-1.483,1.483,4.333,4.333,0,0,1-1.451.269c-.824.038-1.071.045-3.158.045s-2.334-.007-3.158-.045a4.334,4.334,0,0,1-1.451-.269,2.593,2.593,0,0,1-1.484-1.483,4.34,4.34,0,0,1-.269-1.452c-.037-.824-.045-1.071-.045-3.158s.008-2.334.045-3.158a4.332,4.332,0,0,1,.269-1.451,2.584,2.584,0,0,1,1.484-1.483,4.309,4.309,0,0,1,1.451-.269c.824-.038,1.071-.046,3.158-.046m0-1.408c-2.123,0-2.389.009-3.222.047a5.747,5.747,0,0,0-1.9.363,4,4,0,0,0-2.286,2.286,5.74,5.74,0,0,0-.363,1.9c-.038.834-.047,1.1-.047,3.222s.009,2.389.047,3.223a5.749,5.749,0,0,0,.363,1.9,3.99,3.99,0,0,0,2.286,2.285,5.705,5.705,0,0,0,1.9.364c.833.038,1.1.047,3.222.047s2.389-.009,3.222-.047a5.705,5.705,0,0,0,1.9-.364,3.99,3.99,0,0,0,2.286-2.285,5.749,5.749,0,0,0,.363-1.9c.038-.834.047-1.1.047-3.223s-.009-2.388-.047-3.222a5.74,5.74,0,0,0-.363-1.9,4,4,0,0,0-2.286-2.286,5.747,5.747,0,0,0-1.9-.363c-.833-.038-1.1-.047-3.222-.047"
+                                      fill="#222221"
+                                    />
+                                  </g>
+                                </g>
+                                <g id="Group_180" data-name="Group 180">
+                                  <g id="Group_179" data-name="Group 179">
+                                    <path
+                                      id="Path_252"
+                                      data-name="Path 252"
+                                      d="M1043.028,7211.628a4.013,4.013,0,1,0,4.013,4.013,4.013,4.013,0,0,0-4.013-4.013m0,6.618a2.6,2.6,0,1,1,2.605-2.6,2.6,2.6,0,0,1-2.605,2.6"
+                                      fill="#222221"
+                                    />
+                                  </g>
+                                </g>
+                                <g id="Group_181" data-name="Group 181">
+                                  <path
+                                    id="Path_253"
+                                    data-name="Path 253"
+                                    d="M1048.138,7211.469a.938.938,0,1,1-.938-.937.938.938,0,0,1,.938.937"
+                                    fill="#222221"
+                                  />
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
                         </div>
                       </div>
                     </div>
@@ -881,16 +1140,137 @@
                     <div class="slide_conatiner">
                       <div class="avatar"></div>
                       <div class="slide_content">
-                        <div class="name">Abdurashib Ibaydullayev</div>
+                        <div class="name">Abdurashid Ibaydullayev</div>
                         <div class="slide_text">
                           Lorem ipsum dolor sit amet, consectetuer adipiscing
                           elit, sed diam nonummy nibh euismod tincidunt ut
                           laoreet dolore magna.
                         </div>
                         <div class="socials">
-                          <img src="./assets/icons/gplus.svg" alt="" />
-                          <img src="./assets/icons/fbook.svg" alt="" />
-                          <img src="./assets/icons/insta.svg" alt="" />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="29.631"
+                            height="29.631"
+                            viewBox="0 0 29.631 29.631"
+                          >
+                            <g
+                              id="Group_173"
+                              data-name="Group 173"
+                              transform="translate(-945.195 -7200.826)"
+                            >
+                              <g id="Group_169" data-name="Group 169">
+                                <path
+                                  id="Path_245"
+                                  data-name="Path 245"
+                                  d="M960.01,7230.457a14.815,14.815,0,1,1,14.816-14.816A14.833,14.833,0,0,1,960.01,7230.457Zm0-28.508a13.692,13.692,0,1,0,13.693,13.692A13.708,13.708,0,0,0,960.01,7201.949Z"
+                                  fill="#222221"
+                                />
+                              </g>
+                              <g id="Group_172" data-name="Group 172">
+                                <g id="Group_170" data-name="Group 170">
+                                  <path
+                                    id="Path_246"
+                                    data-name="Path 246"
+                                    d="M961.792,7215.27h-5.759l.007,1.649h3.883a3.811,3.811,0,0,1-3.779,3.24,4.518,4.518,0,1,1,3.071-7.83l1.275-1.1a6.192,6.192,0,1,0-4.346,10.6,5.609,5.609,0,0,0,5.657-5.925Z"
+                                    fill="#222221"
+                                  />
+                                </g>
+                                <g id="Group_171" data-name="Group 171">
+                                  <path
+                                    id="Path_247"
+                                    data-name="Path 247"
+                                    d="M970.069,7215.338h-2.377v-2.377h-1.517v2.377H963.8v1.517h2.377v2.377h1.517v-2.377h2.377Z"
+                                    fill="#222221"
+                                  />
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="29.631"
+                            height="29.631"
+                            viewBox="0 0 29.631 29.631"
+                          >
+                            <g
+                              id="Group_176"
+                              data-name="Group 176"
+                              transform="translate(-986.467 -7200.826)"
+                            >
+                              <g id="Group_174" data-name="Group 174">
+                                <path
+                                  id="Path_248"
+                                  data-name="Path 248"
+                                  d="M1001.283,7230.457a14.815,14.815,0,1,1,14.815-14.816A14.834,14.834,0,0,1,1001.283,7230.457Zm0-28.508a13.692,13.692,0,1,0,13.692,13.692A13.708,13.708,0,0,0,1001.283,7201.949Z"
+                                  fill="#222221"
+                                />
+                              </g>
+                              <g id="Group_175" data-name="Group 175">
+                                <path
+                                  id="Path_249"
+                                  data-name="Path 249"
+                                  d="M999.111,7224.257h3.47v-8.689H1005l.259-2.909h-2.679V7211c0-.686.137-.957.8-.957h1.878v-3.019h-2.4c-2.582,0-3.746,1.137-3.746,3.313v2.32h-1.8v2.945h1.8Z"
+                                  fill="#222221"
+                                />
+                              </g>
+                            </g>
+                          </svg>
+
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="29.631"
+                            height="29.63"
+                            viewBox="0 0 29.631 29.63"
+                          >
+                            <g
+                              id="Group_183"
+                              data-name="Group 183"
+                              transform="translate(-1028.212 -7200.827)"
+                            >
+                            
+                            <path
+                            class="strok"
+                                id="Path_250"
+                                data-name="Path 250"
+                                d="M1043.028,7229.9h0a14.254,14.254,0,0,1-14.254-14.254h0a14.253,14.253,0,0,1,14.254-14.253h0a14.253,14.253,0,0,1,14.254,14.253h0A14.254,14.254,0,0,1,1043.028,7229.9Z"
+                                fill="none"
+                                stroke="#222221"
+                                stroke-miterlimit="10"
+                                stroke-width="1.123"
+                              />
+                              <g id="Group_182" data-name="Group 182">
+                                <g id="Group_178" data-name="Group 178">
+                                  <g id="Group_177" data-name="Group 177">
+                                    <path
+                                      id="Path_251"
+                                      data-name="Path 251"
+                                      d="M1043.028,7209.234c2.087,0,2.334.008,3.158.046a4.307,4.307,0,0,1,1.451.269,2.579,2.579,0,0,1,1.483,1.483,4.3,4.3,0,0,1,.27,1.451c.037.824.045,1.072.045,3.158s-.008,2.334-.045,3.158a4.308,4.308,0,0,1-.27,1.452,2.587,2.587,0,0,1-1.483,1.483,4.333,4.333,0,0,1-1.451.269c-.824.038-1.071.045-3.158.045s-2.334-.007-3.158-.045a4.334,4.334,0,0,1-1.451-.269,2.593,2.593,0,0,1-1.484-1.483,4.34,4.34,0,0,1-.269-1.452c-.037-.824-.045-1.071-.045-3.158s.008-2.334.045-3.158a4.332,4.332,0,0,1,.269-1.451,2.584,2.584,0,0,1,1.484-1.483,4.309,4.309,0,0,1,1.451-.269c.824-.038,1.071-.046,3.158-.046m0-1.408c-2.123,0-2.389.009-3.222.047a5.747,5.747,0,0,0-1.9.363,4,4,0,0,0-2.286,2.286,5.74,5.74,0,0,0-.363,1.9c-.038.834-.047,1.1-.047,3.222s.009,2.389.047,3.223a5.749,5.749,0,0,0,.363,1.9,3.99,3.99,0,0,0,2.286,2.285,5.705,5.705,0,0,0,1.9.364c.833.038,1.1.047,3.222.047s2.389-.009,3.222-.047a5.705,5.705,0,0,0,1.9-.364,3.99,3.99,0,0,0,2.286-2.285,5.749,5.749,0,0,0,.363-1.9c.038-.834.047-1.1.047-3.223s-.009-2.388-.047-3.222a5.74,5.74,0,0,0-.363-1.9,4,4,0,0,0-2.286-2.286,5.747,5.747,0,0,0-1.9-.363c-.833-.038-1.1-.047-3.222-.047"
+                                      fill="#222221"
+                                    />
+                                  </g>
+                                </g>
+                                <g id="Group_180" data-name="Group 180">
+                                  <g id="Group_179" data-name="Group 179">
+                                    <path
+                                      id="Path_252"
+                                      data-name="Path 252"
+                                      d="M1043.028,7211.628a4.013,4.013,0,1,0,4.013,4.013,4.013,4.013,0,0,0-4.013-4.013m0,6.618a2.6,2.6,0,1,1,2.605-2.6,2.6,2.6,0,0,1-2.605,2.6"
+                                      fill="#222221"
+                                    />
+                                  </g>
+                                </g>
+                                <g id="Group_181" data-name="Group 181">
+                                  <path
+                                    id="Path_253"
+                                    data-name="Path 253"
+                                    d="M1048.138,7211.469a.938.938,0,1,1-.938-.937.938.938,0,0,1,.938.937"
+                                    fill="#222221"
+                                  />
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
                         </div>
                       </div>
                     </div>
@@ -899,16 +1279,137 @@
                     <div class="slide_conatiner">
                       <div class="avatar"></div>
                       <div class="slide_content">
-                        <div class="name">Abdurashib Ibaydullayev</div>
+                        <div class="name">Abdurashid Ibaydullayev</div>
                         <div class="slide_text">
                           Lorem ipsum dolor sit amet, consectetuer adipiscing
                           elit, sed diam nonummy nibh euismod tincidunt ut
                           laoreet dolore magna.
                         </div>
                         <div class="socials">
-                          <img src="./assets/icons/gplus.svg" alt="" />
-                          <img src="./assets/icons/fbook.svg" alt="" />
-                          <img src="./assets/icons/insta.svg" alt="" />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="29.631"
+                            height="29.631"
+                            viewBox="0 0 29.631 29.631"
+                          >
+                            <g
+                              id="Group_173"
+                              data-name="Group 173"
+                              transform="translate(-945.195 -7200.826)"
+                            >
+                              <g id="Group_169" data-name="Group 169">
+                                <path
+                                  id="Path_245"
+                                  data-name="Path 245"
+                                  d="M960.01,7230.457a14.815,14.815,0,1,1,14.816-14.816A14.833,14.833,0,0,1,960.01,7230.457Zm0-28.508a13.692,13.692,0,1,0,13.693,13.692A13.708,13.708,0,0,0,960.01,7201.949Z"
+                                  fill="#222221"
+                                />
+                              </g>
+                              <g id="Group_172" data-name="Group 172">
+                                <g id="Group_170" data-name="Group 170">
+                                  <path
+                                    id="Path_246"
+                                    data-name="Path 246"
+                                    d="M961.792,7215.27h-5.759l.007,1.649h3.883a3.811,3.811,0,0,1-3.779,3.24,4.518,4.518,0,1,1,3.071-7.83l1.275-1.1a6.192,6.192,0,1,0-4.346,10.6,5.609,5.609,0,0,0,5.657-5.925Z"
+                                    fill="#222221"
+                                  />
+                                </g>
+                                <g id="Group_171" data-name="Group 171">
+                                  <path
+                                    id="Path_247"
+                                    data-name="Path 247"
+                                    d="M970.069,7215.338h-2.377v-2.377h-1.517v2.377H963.8v1.517h2.377v2.377h1.517v-2.377h2.377Z"
+                                    fill="#222221"
+                                  />
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="29.631"
+                            height="29.631"
+                            viewBox="0 0 29.631 29.631"
+                          >
+                            <g
+                              id="Group_176"
+                              data-name="Group 176"
+                              transform="translate(-986.467 -7200.826)"
+                            >
+                              <g id="Group_174" data-name="Group 174">
+                                <path
+                                  id="Path_248"
+                                  data-name="Path 248"
+                                  d="M1001.283,7230.457a14.815,14.815,0,1,1,14.815-14.816A14.834,14.834,0,0,1,1001.283,7230.457Zm0-28.508a13.692,13.692,0,1,0,13.692,13.692A13.708,13.708,0,0,0,1001.283,7201.949Z"
+                                  fill="#222221"
+                                />
+                              </g>
+                              <g id="Group_175" data-name="Group 175">
+                                <path
+                                  id="Path_249"
+                                  data-name="Path 249"
+                                  d="M999.111,7224.257h3.47v-8.689H1005l.259-2.909h-2.679V7211c0-.686.137-.957.8-.957h1.878v-3.019h-2.4c-2.582,0-3.746,1.137-3.746,3.313v2.32h-1.8v2.945h1.8Z"
+                                  fill="#222221"
+                                />
+                              </g>
+                            </g>
+                          </svg>
+
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="29.631"
+                            height="29.63"
+                            viewBox="0 0 29.631 29.63"
+                          >
+                            <g
+                              id="Group_183"
+                              data-name="Group 183"
+                              transform="translate(-1028.212 -7200.827)"
+                            >
+                            
+                            <path
+                            class="strok"
+                                id="Path_250"
+                                data-name="Path 250"
+                                d="M1043.028,7229.9h0a14.254,14.254,0,0,1-14.254-14.254h0a14.253,14.253,0,0,1,14.254-14.253h0a14.253,14.253,0,0,1,14.254,14.253h0A14.254,14.254,0,0,1,1043.028,7229.9Z"
+                                fill="none"
+                                stroke="#222221"
+                                stroke-miterlimit="10"
+                                stroke-width="1.123"
+                              />
+                              <g id="Group_182" data-name="Group 182">
+                                <g id="Group_178" data-name="Group 178">
+                                  <g id="Group_177" data-name="Group 177">
+                                    <path
+                                      id="Path_251"
+                                      data-name="Path 251"
+                                      d="M1043.028,7209.234c2.087,0,2.334.008,3.158.046a4.307,4.307,0,0,1,1.451.269,2.579,2.579,0,0,1,1.483,1.483,4.3,4.3,0,0,1,.27,1.451c.037.824.045,1.072.045,3.158s-.008,2.334-.045,3.158a4.308,4.308,0,0,1-.27,1.452,2.587,2.587,0,0,1-1.483,1.483,4.333,4.333,0,0,1-1.451.269c-.824.038-1.071.045-3.158.045s-2.334-.007-3.158-.045a4.334,4.334,0,0,1-1.451-.269,2.593,2.593,0,0,1-1.484-1.483,4.34,4.34,0,0,1-.269-1.452c-.037-.824-.045-1.071-.045-3.158s.008-2.334.045-3.158a4.332,4.332,0,0,1,.269-1.451,2.584,2.584,0,0,1,1.484-1.483,4.309,4.309,0,0,1,1.451-.269c.824-.038,1.071-.046,3.158-.046m0-1.408c-2.123,0-2.389.009-3.222.047a5.747,5.747,0,0,0-1.9.363,4,4,0,0,0-2.286,2.286,5.74,5.74,0,0,0-.363,1.9c-.038.834-.047,1.1-.047,3.222s.009,2.389.047,3.223a5.749,5.749,0,0,0,.363,1.9,3.99,3.99,0,0,0,2.286,2.285,5.705,5.705,0,0,0,1.9.364c.833.038,1.1.047,3.222.047s2.389-.009,3.222-.047a5.705,5.705,0,0,0,1.9-.364,3.99,3.99,0,0,0,2.286-2.285,5.749,5.749,0,0,0,.363-1.9c.038-.834.047-1.1.047-3.223s-.009-2.388-.047-3.222a5.74,5.74,0,0,0-.363-1.9,4,4,0,0,0-2.286-2.286,5.747,5.747,0,0,0-1.9-.363c-.833-.038-1.1-.047-3.222-.047"
+                                      fill="#222221"
+                                    />
+                                  </g>
+                                </g>
+                                <g id="Group_180" data-name="Group 180">
+                                  <g id="Group_179" data-name="Group 179">
+                                    <path
+                                      id="Path_252"
+                                      data-name="Path 252"
+                                      d="M1043.028,7211.628a4.013,4.013,0,1,0,4.013,4.013,4.013,4.013,0,0,0-4.013-4.013m0,6.618a2.6,2.6,0,1,1,2.605-2.6,2.6,2.6,0,0,1-2.605,2.6"
+                                      fill="#222221"
+                                    />
+                                  </g>
+                                </g>
+                                <g id="Group_181" data-name="Group 181">
+                                  <path
+                                    id="Path_253"
+                                    data-name="Path 253"
+                                    d="M1048.138,7211.469a.938.938,0,1,1-.938-.937.938.938,0,0,1,.938.937"
+                                    fill="#222221"
+                                  />
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
                         </div>
                       </div>
                     </div>
@@ -924,37 +1425,32 @@
       </section>
       <section id="quote">
         <div class="container">
-          <div class="title">
+          <div class="title gs_reveal gs_reveal_fromTop">
             <h1>get a quote</h1>
           </div>
           <div class="form">
             <div class="form_gird">
-              <div class="grid_title"><h1>personal data</h1></div>
-              <input type="text" placeholder="Name" class="form_name" />
-              <input type="text" placeholder="Phone" class="form_phone" />
-              <input type="text" placeholder="E-mail" class="form_email" />
+              <div class="grid_title gs_reveal gs_reveal_fromTop"><h1>personal data</h1></div>
+              <input type="text" placeholder="Name" class="form_name gs_reveal gs_reveal_fromBottom" />
+              <input type="text" placeholder="Phone" class="form_phone gs_reveal gs_reveal_fromBottom" />
+              <input type="text" placeholder="E-mail" class="form_email gs_reveal gs_reveal_fromBottom" />
               <input
                 type="text"
                 placeholder="Company name"
-                class="form_cname"
+                class="form_cname gs_reveal gs_reveal_fromBottom"
               />
-              <input type="text" placeholder="MC#" class="form_mc" />
-              <div class="grid_title mt-15"><h1>Notes</h1></div>
-              <textarea placeholder="Notes"></textarea>
-              <div class="grid_title"><h1>personal data</h1></div>
-              <input type="text" class="form_from" placeholder="From" />
-              <input type="text" class="form_to" placeholder="To" />
-              <input type="text" class="form_pick" placeholder="Pick-up date" />
-              <input type="text" class="form_del" placeholder="Delivery date" />
-              <button class="form_btn">Submit</button>
+              <input type="text" placeholder="MC#" class="form_mc gs_reveal gs_reveal_fromBottom" />
+              <div class="grid_title mt-15 gs_reveal gs_reveal_fromTop"><h1>Notes</h1></div>
+              <textarea placeholder="Notes" class="gs_reveal gs_reveal_fromBottom"></textarea>
+              <button class="form_btn gs_reveal gs_reveal_fromBottom">Submit</button>
             </div>
           </div>
         </div>
         <div class="location_container">
-          <div class="title">
+          <div class="title gs_reveal gs_reveal_fromTop">
             <h1>where we located</h1>
           </div>
-          <div class="map">
+          <div class="map gs_reveal gs_reveal_fromScale">
             <div id="map"></div>
           </div>
         </div>
@@ -962,30 +1458,30 @@
       <footer>
         <div class="container">
           <div class="links">
-            <div class="logo">
+            <div class="logo gs_reveal gs_reveal_fromTop">
               <a href="#home">
-                <img src="./assets/icons/header_logo.svg" alt="" />
+                <img src="./assets/images/Asset 1@2x.png" alt="" />
               </a>
-              <div class="text-1 text">
+              <div class="text-1 text  gs_reveal gs_reveal_fromTop">
                 <p>&copy; 2018-2021</p>
                 <p>Cargoprime Corp</p>
                 <p>All rights reserved</p>
               </div>
             </div>
             <div class="menu_links">
-              <a href="#about">About us</a>
-              <a href="#news">News</a>
-              <a href="#blogs">Blogs</a>
-              <a href="#reviews">Reviews</a>
-              <a href="#contacts">Contacts</a>
+              <a class=" gs_reveal gs_reveal_fromTop" href="#about">About us</a>
+              <a class=" gs_reveal gs_reveal_fromTop" href="#news">News</a>
+              <a class=" gs_reveal gs_reveal_fromTop" href="#blogs">Blogs</a>
+              <a class=" gs_reveal gs_reveal_fromTop" href="#reviews">Reviews</a>
+              <a class=" gs_reveal gs_reveal_fromTop" href="#contacts">Contacts</a>
             </div>
             <div class="tel">
-              <a href="tel: +14124448989">+1 412-444-8989</a>
-              <a href="tel: +14124448989">+1 484-447-0687</a>
-              <a href="mailto: info@cargoprimecorp.com"
+              <a class=" gs_reveal gs_reveal_fromTop" href="tel: +14124448989">+1 412-444-8989</a>
+              <a class=" gs_reveal gs_reveal_fromTop" href="tel: +14124448989">+1 484-447-0687</a>
+              <a class=" gs_reveal gs_reveal_fromTop" href="mailto: info@cargoprimecorp.com"
                 >info@cargoprimecorp.com</a
               >
-              <div class="social">
+              <div class="social  gs_reveal gs_reveal_fromTop">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="27.89"
@@ -1123,7 +1619,7 @@
                 </svg>
               </div>
             </div>
-            <div class="text-2 text">
+            <div class="text-2 text  gs_reveal gs_reveal_fromTop">
               <p>&copy; 2018-2021</p>
               <p>Cargoprime Corp</p>
               <p>All rights reserved</p>
@@ -1133,12 +1629,14 @@
       </footer>
     </div>
 
-    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script
       src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>"
       type="text/javascript"
     ></script>
-    <script src="./js/swiper.js"></script>
+    <!-- <script src="./js/swiper.js"></script> -->
+   
     <script src="./js/index.js"></script>
+    <script src="./js/animate.js"></script>
   </body>
 </html>

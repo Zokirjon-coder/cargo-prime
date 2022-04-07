@@ -60,8 +60,9 @@ const wrapper = document.querySelector(".wrapper");
 const sections = document.querySelectorAll(".wrapper > section");
 const navbtns = document.querySelectorAll(".navigation .nav_btn");
 
-wrapper.addEventListener("scroll", (e) => {
-  const scrollY = e.srcElement.scrollTop;
+document.addEventListener("scroll", (e) => {
+  const scrollY = e.srcElement.scrollingElement.scrollTop;
+
   sections.forEach((section) => {
     const sectionHeight = section.offsetHeight;
     const sectionTop = section.offsetTop - 200;
@@ -77,27 +78,7 @@ wrapper.addEventListener("scroll", (e) => {
   });
 });
 
-// let spaceB = window.innerWidth > 500 ? 0:30;
-
-const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 0,
-  slidesPerView: "auto",
-  centeredSlides: true,
-  grubCursor: true,
-  loop: true,
-  observer: true,
-  observerParents: true,
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+// for map
 
 ymaps.ready(init);
 function init() {
