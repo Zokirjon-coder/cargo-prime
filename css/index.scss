@@ -3104,7 +3104,7 @@ section {
       text-transform: uppercase;
     }
     @media screen and (max-width: 1440px) {
-      padding: 80px 10vw 50px;
+      padding: 80px 10vw 80px;
 
       .title {
         font-size: 25px;
@@ -3112,7 +3112,7 @@ section {
       }
     }
     @media screen and (max-width: 900px) {
-      padding: 70px 10vw 50px;
+      padding: 70px 10vw 70px;
 
       .title {
         font-size: 20px;
@@ -3120,7 +3120,7 @@ section {
       }
     }
     @media screen and (max-width: 768px) {
-      padding: 60px 0 30px;
+      padding: 60px 0 60px;
 
       .title {
         font-size: 18px;
@@ -3128,7 +3128,7 @@ section {
       }
     }
     @media screen and (max-width: 500px) {
-      padding: 50px 0 20px;
+      padding: 50px 0 50px;
 
       .title {
         font-size: 16px;
@@ -3136,7 +3136,7 @@ section {
       }
     }
     @media screen and (max-width: 350px) {
-      padding: 40px 0 10px;
+      padding: 40px 0 40px;
 
       .title {
         font-size: 15px;
@@ -3160,13 +3160,22 @@ section {
   top: auto;
   bottom: 0;
   z-index: 15;
+  &::after {
+    transition: 0.2s;
+  }
 }
 
 .swiper-button-next {
   right: 160px;
+  &:hover::after {
+    transform: translate(5px);
+  }
 }
 .swiper-button-prev {
   left: 160px;
+  &:hover::after {
+    transform: translate(-5px);
+  }
 }
 
 .swiper-pagination-bullet {

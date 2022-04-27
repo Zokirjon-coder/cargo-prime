@@ -3232,7 +3232,7 @@ section {
 
 @media screen and (max-width: 1440px) {
   #info .testimonials_container {
-    padding: 80px 10vw 50px;
+    padding: 80px 10vw 80px;
   }
   #info .testimonials_container .title {
     font-size: 25px;
@@ -3242,7 +3242,7 @@ section {
 
 @media screen and (max-width: 900px) {
   #info .testimonials_container {
-    padding: 70px 10vw 50px;
+    padding: 70px 10vw 70px;
   }
   #info .testimonials_container .title {
     font-size: 20px;
@@ -3252,7 +3252,7 @@ section {
 
 @media screen and (max-width: 768px) {
   #info .testimonials_container {
-    padding: 60px 0 30px;
+    padding: 60px 0 60px;
   }
   #info .testimonials_container .title {
     font-size: 18px;
@@ -3262,7 +3262,7 @@ section {
 
 @media screen and (max-width: 500px) {
   #info .testimonials_container {
-    padding: 50px 0 20px;
+    padding: 50px 0 50px;
   }
   #info .testimonials_container .title {
     font-size: 16px;
@@ -3272,7 +3272,7 @@ section {
 
 @media screen and (max-width: 350px) {
   #info .testimonials_container {
-    padding: 40px 0 10px;
+    padding: 40px 0 40px;
   }
   #info .testimonials_container .title {
     font-size: 15px;
@@ -3296,12 +3296,27 @@ section {
   z-index: 15;
 }
 
+.button_swip::after {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 .swiper-button-next {
   right: 160px;
 }
 
+.swiper-button-next:hover::after {
+  -webkit-transform: translate(5px);
+          transform: translate(5px);
+}
+
 .swiper-button-prev {
   left: 160px;
+}
+
+.swiper-button-prev:hover::after {
+  -webkit-transform: translate(-5px);
+          transform: translate(-5px);
 }
 
 .swiper-pagination-bullet {
