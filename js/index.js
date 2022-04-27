@@ -65,7 +65,7 @@ const chatBox = document.querySelector('.chat');
 document.addEventListener('scroll', (e) => {
   const scrollY = e.srcElement.scrollingElement.scrollTop;
   console.log(footerHeight);
-  if (wrapperHeight - footerHeight * 2.5 < scrollY) {
+  if (wrapperHeight - footerHeight * 3 < scrollY) {
     chatBox.style = 'opacity: 0';
   } else {
     chatBox.style = 'opacity: 1';
