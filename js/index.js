@@ -59,9 +59,17 @@ call_btn.addEventListener('click', () => {
 const wrapper = document.querySelector('.wrapper');
 const sections = document.querySelectorAll('.wrapper > section');
 const navbtns = document.querySelectorAll('.navigation .nav_btn');
-
+const footerHeight = wrapper.querySelector('footer').scrollHeight;
+const wrapperHeight = wrapper.scrollHeight;
+const chatBox = document.querySelector('.chat');
 document.addEventListener('scroll', (e) => {
   const scrollY = e.srcElement.scrollingElement.scrollTop;
+  console.log(footerHeight);
+  if (wrapperHeight - footerHeight * 2 < scrollY) {
+    chatBox.style = 'opacity: 0';
+  } else {
+    chatBox.style = 'opacity: 1';
+  }
 
   sections.forEach((section) => {
     const sectionHeight = section.offsetHeight;

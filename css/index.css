@@ -1161,6 +1161,90 @@
   }
 }
 
+.navigation_section .chat {
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  right: 4vw;
+  bottom: 4vw;
+  width: 162px;
+  height: 120px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right bottom, from(#47abd8), to(#0071bc));
+  background: linear-gradient(to right bottom, #47abd8, #0071bc);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 23px;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.navigation_section .chat::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: -15px;
+  right: 20px;
+  background: #0577c4;
+  -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+          clip-path: polygon(100% 0, 0 0, 50% 100%);
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  z-index: -1;
+}
+
+@media screen and (max-width: 1840px) {
+  .navigation_section .chat {
+    width: 152px;
+    height: 110px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .navigation_section .chat {
+    width: 132px;
+    height: 90px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navigation_section .chat {
+    width: 112px;
+    height: 70px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation_section .chat {
+    border-radius: 10px;
+    height: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-weight: 500;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
 section .container {
   padding: 0 10vw;
   padding-left: 192px;
