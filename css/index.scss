@@ -540,6 +540,7 @@
     background: white;
     padding: 5px;
     nav {
+      margin: 0 5vw;
       .logo {
         img {
           height: 100%;
@@ -962,6 +963,9 @@
     text-transform: uppercase;
     pointer-events: all;
     cursor: pointer;
+    p {
+      white-space: nowrap;
+    }
     &::before {
       content: '';
       position: absolute;
@@ -1285,7 +1289,7 @@ section {
       padding-top: 140px;
       padding-left: 0;
       padding-right: 0;
-      margin-left: 10vw;
+      margin-left: 5vw;
       margin-right: 5vw;
       // padding-right: 85px;
       flex-direction: column;
@@ -1578,6 +1582,7 @@ section {
   }
   @media screen and (max-width: 768px) {
     .container {
+      padding: 0 5vw;
       .flex {
         gap: 20px;
         flex-direction: column;
@@ -1704,6 +1709,31 @@ section {
                   transform: scale(1.05);
                 }
               }
+            }
+          }
+        }
+        .slidenavBtns {
+          display: none;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          bottom: 5vw;
+          left: 0;
+          right: 0;
+          gap: 50px;
+          button {
+            all: unset;
+            cursor: pointer;
+            img {
+              transition: 0.3s;
+            }
+            &.prev:hover img {
+              transform: translateX(-10px) scaleX(1.2);
+              transform-origin: left center;
+            }
+            &.next:hover img {
+              transform: translateX(10px) scaleX(1.2);
+              transform-origin: right center;
             }
           }
         }
@@ -1982,17 +2012,19 @@ section {
     .container {
       padding: 5vw 5vw 0vw 10vw;
       .content {
-        .cards {
-          padding: 30px 20px 15px;
-          overflow-x: scroll;
-          scroll-snap-type: x mandatory;
-          height: 430px;
-          &::-webkit-scrollbar {
-            height: 0;
-          }
-          gap: 50px;
-          .card {
-            scroll-snap-align: center;
+        .banner {
+          .cards {
+            padding: 30px 20px 15px;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            height: 430px;
+            &::-webkit-scrollbar {
+              height: 0;
+            }
+            gap: 50px;
+            .card {
+              scroll-snap-align: center;
+            }
           }
         }
       }
@@ -2000,7 +2032,7 @@ section {
   }
   @media screen and (max-width: 768px) {
     .container {
-      padding: 15vw 5vw 0vw 10vw;
+      padding: 15vw 5vw 0vw 5vw;
       .content {
         .title {
           h1 {
@@ -2058,6 +2090,11 @@ section {
           }
         }
       }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .container .content .banner .slidenavBtns {
+      display: flex;
     }
   }
 }
@@ -2294,6 +2331,7 @@ section {
   @media screen and (max-width: 768px) {
     .container {
       min-height: 100vh;
+      padding: 5vw;
 
       .banner {
         width: 100%;
@@ -2633,6 +2671,7 @@ section {
     }
     @media screen and (max-width: 768px) {
       box-shadow: var(--shadow);
+      padding: 0 5vw;
       .banner {
         padding-top: 15vw;
         .info_company {
@@ -3175,15 +3214,15 @@ section {
       }
     }
     @media screen and (max-width: 768px) {
-      padding: 60px 0 60px;
-
+      // padding: 60px 0 60px;
+      padding: 5vw 0 5vw;
       .title {
         font-size: 18px;
         margin-bottom: 35px;
       }
     }
     @media screen and (max-width: 500px) {
-      padding: 50px 0 50px;
+      // padding: 50px 0 50px;
 
       .title {
         font-size: 16px;
@@ -3191,7 +3230,7 @@ section {
       }
     }
     @media screen and (max-width: 350px) {
-      padding: 40px 0 40px;
+      // padding: 40px 0 40px;
 
       .title {
         font-size: 15px;
@@ -3656,7 +3695,7 @@ section {
     padding-top: 50px;
     .container {
       padding: 0;
-      margin: 0 5vw 0 10vw;
+      margin: 0 5vw;
       .title {
         margin-bottom: 55px;
         margin-top: 180px;

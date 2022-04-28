@@ -654,6 +654,9 @@
     background: white;
     padding: 5px;
   }
+  .header nav {
+    margin: 0 5vw;
+  }
   .header nav .logo img {
     height: 100%;
   }
@@ -1193,6 +1196,10 @@
   cursor: pointer;
 }
 
+.navigation_section .chat p {
+  white-space: nowrap;
+}
+
 .navigation_section .chat::before {
   content: '';
   position: absolute;
@@ -1563,7 +1570,7 @@ section {
     padding-top: 140px;
     padding-left: 0;
     padding-right: 0;
-    margin-left: 10vw;
+    margin-left: 5vw;
     margin-right: 5vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1860,6 +1867,9 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+  #story .container {
+    padding: 0 5vw;
+  }
   #story .container .flex {
     gap: 20px;
     -webkit-box-orient: vertical;
@@ -2014,6 +2024,45 @@ section {
 #service .container .content .banner .cards .card .card_container a:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+#service .container .content .banner .slidenavBtns {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 5vw;
+  left: 0;
+  right: 0;
+  gap: 50px;
+}
+
+#service .container .content .banner .slidenavBtns button {
+  all: unset;
+  cursor: pointer;
+}
+
+#service .container .content .banner .slidenavBtns button img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#service .container .content .banner .slidenavBtns button.prev:hover img {
+  -webkit-transform: translateX(-10px) scaleX(1.2);
+          transform: translateX(-10px) scaleX(1.2);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+
+#service .container .content .banner .slidenavBtns button.next:hover img {
+  -webkit-transform: translateX(10px) scaleX(1.2);
+          transform: translateX(10px) scaleX(1.2);
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
 }
 
 @media screen and (min-width: 1440px) {
@@ -2274,7 +2323,7 @@ section {
   #service .container {
     padding: 5vw 5vw 0vw 10vw;
   }
-  #service .container .content .cards {
+  #service .container .content .banner .cards {
     padding: 30px 20px 15px;
     overflow-x: scroll;
     -ms-scroll-snap-type: x mandatory;
@@ -2282,17 +2331,17 @@ section {
     height: 430px;
     gap: 50px;
   }
-  #service .container .content .cards::-webkit-scrollbar {
+  #service .container .content .banner .cards::-webkit-scrollbar {
     height: 0;
   }
-  #service .container .content .cards .card {
+  #service .container .content .banner .cards .card {
     scroll-snap-align: center;
   }
 }
 
 @media screen and (max-width: 768px) {
   #service .container {
-    padding: 15vw 5vw 0vw 10vw;
+    padding: 15vw 5vw 0vw 5vw;
   }
   #service .container .content .title h1 {
     font-weight: 800;
@@ -2344,6 +2393,14 @@ section {
     padding: 3px 0;
     border-radius: 15px;
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #service .container .content .banner .slidenavBtns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -2593,6 +2650,7 @@ section {
 @media screen and (max-width: 768px) {
   #choose .container {
     min-height: 100vh;
+    padding: 5vw;
   }
   #choose .container .banner {
     width: 100%;
@@ -2957,6 +3015,7 @@ section {
   #info .container {
     -webkit-box-shadow: var(--shadow);
             box-shadow: var(--shadow);
+    padding: 0 5vw;
   }
   #info .container .banner {
     padding-top: 15vw;
@@ -3336,7 +3395,7 @@ section {
 
 @media screen and (max-width: 768px) {
   #info .testimonials_container {
-    padding: 60px 0 60px;
+    padding: 5vw 0 5vw;
   }
   #info .testimonials_container .title {
     font-size: 18px;
@@ -3345,9 +3404,6 @@ section {
 }
 
 @media screen and (max-width: 500px) {
-  #info .testimonials_container {
-    padding: 50px 0 50px;
-  }
   #info .testimonials_container .title {
     font-size: 16px;
     margin-bottom: 35px;
@@ -3355,9 +3411,6 @@ section {
 }
 
 @media screen and (max-width: 350px) {
-  #info .testimonials_container {
-    padding: 40px 0 40px;
-  }
   #info .testimonials_container .title {
     font-size: 15px;
     margin-bottom: 35px;
@@ -3930,7 +3983,7 @@ section {
   }
   #quote .container {
     padding: 0;
-    margin: 0 5vw 0 10vw;
+    margin: 0 5vw;
   }
   #quote .container .title {
     margin-bottom: 55px;

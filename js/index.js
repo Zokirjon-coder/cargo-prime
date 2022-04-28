@@ -281,3 +281,14 @@ nextBtn.addEventListener('click', () => {
   onChangeSlide('next');
   clearInterval(intervalSlide);
 });
+
+const offerCards = document.querySelector('#service .cards');
+const offerPrevBtn = document.querySelector('#service .slidenavBtns .prev');
+const offerNextBtn = document.querySelector('#service .slidenavBtns .next');
+
+offerNextBtn.addEventListener('click', () => {
+  offerCards.scrollLeft += 150;
+});
+offerPrevBtn.addEventListener('click', () => {
+  offerCards.scrollLeft -= 150;
+});
