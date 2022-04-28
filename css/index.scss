@@ -2233,9 +2233,6 @@ section {
         align-items: center;
         justify-content: flex-start;
         padding-left: 80px;
-        & > * + * {
-          margin-left: 50px;
-        }
         button {
           all: unset;
           cursor: pointer;
@@ -2245,6 +2242,9 @@ section {
           &.prev:hover img {
             transform: translateX(-10px) scaleX(1.2);
             transform-origin: left center;
+          }
+          &.next {
+            margin-left: 50px;
           }
           &.next:hover img {
             transform: translateX(10px) scaleX(1.2);

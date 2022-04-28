@@ -114,8 +114,8 @@ float_menus.forEach((menu) => {
 });
 
 // slider trucks
-const prevBtn = document.querySelector('.slidenavBtns .prev');
-const nextBtn = document.querySelector('.slidenavBtns .next');
+const prevBtn = document.querySelector('#choose .slidenavBtns .prev');
+const nextBtn = document.querySelector('#choose .slidenavBtns .next');
 const slide = document.querySelector('.slider_container .images');
 const params = document.querySelector('.slider_container .params');
 const numberSlide = document.querySelector('.numberSlide .number');

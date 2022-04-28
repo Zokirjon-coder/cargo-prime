@@ -2571,10 +2571,6 @@ section {
   padding-left: 80px;
 }
 
-#choose .container .banner .slidenavBtns > * + * {
-  margin-left: 50px;
-}
-
 #choose .container .banner .slidenavBtns button {
   all: unset;
   cursor: pointer;
@@ -2590,6 +2586,10 @@ section {
           transform: translateX(-10px) scaleX(1.2);
   -webkit-transform-origin: left center;
           transform-origin: left center;
+}
+
+#choose .container .banner .slidenavBtns button.next {
+  margin-left: 50px;
 }
 
 #choose .container .banner .slidenavBtns button.next:hover img {
