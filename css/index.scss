@@ -1706,6 +1706,18 @@ section {
           top: 0;
           background: var(--second-blue);
           border-radius: 30px;
+          p {
+            color: #000000;
+          }
+        }
+        .requirement {
+          display: none;
+          position: absolute;
+          width: 100%;
+          bottom: 35px;
+          p {
+            color: #000000;
+          }
         }
         .cards {
           display: flex;
@@ -1977,6 +1989,14 @@ section {
         }
         .banner {
           margin-top: 40px;
+          .requirement {
+            display: block;
+            width: 100%;
+            bottom: -35px;
+            p {
+              font-size: 12px;
+            }
+          }
           .fon {
             height: 294px;
             border-radius: 30px;
@@ -1985,26 +2005,32 @@ section {
             padding: 80px 20px 0;
             .card {
               width: 225px;
-              height: 380px;
+              height: 340px;
               border-radius: 15px;
               .card_container {
                 padding: 12px 20px;
 
                 .card_img {
-                  margin-bottom: 15px;
+                  margin-bottom: 5px;
                 }
                 .card_title {
                   font-weight: 700;
-                  font-size: 14px;
-                  margin-bottom: 9px;
+                  font-size: 13px;
+                  margin-bottom: 5px;
+                }
+                .card_text {
+                  p,
+                  hr {
+                    display: none;
+                  }
                 }
                 .card_text li {
                   font-weight: 400;
-                  font-size: 13px;
+                  font-size: 12px;
                 }
                 a {
                   font-weight: 800;
-                  font-size: 13px;
+                  font-size: 12px;
                   width: 100%;
                   height: auto;
                   padding: 3px 0;
@@ -2047,7 +2073,7 @@ section {
               margin-left: 10px;
             }
             .card {
-              width: 200px;
+              min-width: 200px;
               height: 300px;
               border-radius: 15px;
               // scroll-snap-align: center;
@@ -2055,12 +2081,12 @@ section {
                 padding: 12px 20px;
 
                 .card_img {
-                  margin-bottom: 15px;
+                  margin-bottom: 5px;
                 }
                 .card_title {
                   font-weight: 700;
                   font-size: 12px;
-                  margin-bottom: 9px;
+                  margin-bottom: 5px;
                 }
                 .card_text li {
                   font-weight: 400;
@@ -2087,6 +2113,9 @@ section {
       padding: 5vw 5vw 0vw 10vw;
       .content {
         .banner {
+          .requirement {
+            bottom: 15px;
+          }
           .cards {
             padding: 30px 20px 15px;
             overflow-x: scroll;
@@ -2100,6 +2129,20 @@ section {
             }
             .card {
               scroll-snap-align: center;
+              min-height: 220px;
+              .card_img {
+                margin-bottom: 3px;
+                height: auto;
+                svg {
+                  width: 30px;
+                  height: 30px;
+                }
+              }
+              .card_title {
+                font-weight: 700;
+                font-size: 12px;
+                margin-bottom: 3px;
+              }
             }
           }
         }
@@ -2118,6 +2161,9 @@ section {
         }
         .banner {
           margin-top: 40px;
+          .requirement {
+            bottom: 15px;
+          }
           .fon {
             height: 294px;
             border-radius: 30px;
@@ -2140,12 +2186,12 @@ section {
                 padding: 12px 20px;
 
                 .card_img {
-                  margin-bottom: 15px;
+                  margin-bottom: 3px;
                 }
                 .card_title {
                   font-weight: 700;
                   font-size: 11px;
-                  margin-bottom: 9px;
+                  margin-bottom: 3px;
                 }
                 .card_text li {
                   font-weight: 400;
@@ -2168,8 +2214,14 @@ section {
     }
   }
   @media screen and (max-width: 500px) {
-    .container .content .banner .slidenavBtns {
-      display: flex;
+    .container .content .banner {
+      padding-bottom: 50px;
+      .requirement {
+        bottom: 75px;
+      }
+      .slidenavBtns {
+        display: flex;
+      }
     }
   }
 }

@@ -2007,6 +2007,21 @@ section {
   border-radius: 30px;
 }
 
+#service .container .content .banner .fon p {
+  color: #000000;
+}
+
+#service .container .content .banner .requirement {
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 35px;
+}
+
+#service .container .content .banner .requirement p {
+  color: #000000;
+}
+
 #service .container .content .banner .cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2326,6 +2341,14 @@ section {
   #service .container .content .banner {
     margin-top: 40px;
   }
+  #service .container .content .banner .requirement {
+    display: block;
+    width: 100%;
+    bottom: -35px;
+  }
+  #service .container .content .banner .requirement p {
+    font-size: 12px;
+  }
   #service .container .content .banner .fon {
     height: 294px;
     border-radius: 30px;
@@ -2335,27 +2358,31 @@ section {
   }
   #service .container .content .banner .cards .card {
     width: 225px;
-    height: 380px;
+    height: 340px;
     border-radius: 15px;
   }
   #service .container .content .banner .cards .card .card_container {
     padding: 12px 20px;
   }
   #service .container .content .banner .cards .card .card_container .card_img {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
   #service .container .content .banner .cards .card .card_container .card_title {
     font-weight: 700;
-    font-size: 14px;
-    margin-bottom: 9px;
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  #service .container .content .banner .cards .card .card_container .card_text p,
+  #service .container .content .banner .cards .card .card_container .card_text hr {
+    display: none;
   }
   #service .container .content .banner .cards .card .card_container .card_text li {
     font-weight: 400;
-    font-size: 13px;
+    font-size: 12px;
   }
   #service .container .content .banner .cards .card .card_container a {
     font-weight: 800;
-    font-size: 13px;
+    font-size: 12px;
     width: 100%;
     height: auto;
     padding: 3px 0;
@@ -2388,7 +2415,7 @@ section {
     margin-left: 10px;
   }
   #service .container .content .banner .cards .card {
-    width: 200px;
+    min-width: 200px;
     height: 300px;
     border-radius: 15px;
   }
@@ -2396,12 +2423,12 @@ section {
     padding: 12px 20px;
   }
   #service .container .content .banner .cards .card .card_container .card_img {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
   #service .container .content .banner .cards .card .card_container .card_title {
     font-weight: 700;
     font-size: 12px;
-    margin-bottom: 9px;
+    margin-bottom: 5px;
   }
   #service .container .content .banner .cards .card .card_container .card_text li {
     font-weight: 400;
@@ -2422,6 +2449,9 @@ section {
   #service .container {
     padding: 5vw 5vw 0vw 10vw;
   }
+  #service .container .content .banner .requirement {
+    bottom: 15px;
+  }
   #service .container .content .banner .cards {
     padding: 30px 20px 15px;
     overflow-x: scroll;
@@ -2437,6 +2467,20 @@ section {
   }
   #service .container .content .banner .cards .card {
     scroll-snap-align: center;
+    min-height: 220px;
+  }
+  #service .container .content .banner .cards .card .card_img {
+    margin-bottom: 3px;
+    height: auto;
+  }
+  #service .container .content .banner .cards .card .card_img svg {
+    width: 30px;
+    height: 30px;
+  }
+  #service .container .content .banner .cards .card .card_title {
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 3px;
   }
 }
 
@@ -2450,6 +2494,9 @@ section {
   }
   #service .container .content .banner {
     margin-top: 40px;
+  }
+  #service .container .content .banner .requirement {
+    bottom: 15px;
   }
   #service .container .content .banner .fon {
     height: 294px;
@@ -2474,12 +2521,12 @@ section {
     padding: 12px 20px;
   }
   #service .container .content .banner .cards .card .card_container .card_img {
-    margin-bottom: 15px;
+    margin-bottom: 3px;
   }
   #service .container .content .banner .cards .card .card_container .card_title {
     font-weight: 700;
     font-size: 11px;
-    margin-bottom: 9px;
+    margin-bottom: 3px;
   }
   #service .container .content .banner .cards .card .card_container .card_text li {
     font-weight: 400;
@@ -2497,6 +2544,12 @@ section {
 }
 
 @media screen and (max-width: 500px) {
+  #service .container .content .banner {
+    padding-bottom: 50px;
+  }
+  #service .container .content .banner .requirement {
+    bottom: 75px;
+  }
   #service .container .content .banner .slidenavBtns {
     display: -webkit-box;
     display: -ms-flexbox;
