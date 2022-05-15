@@ -2022,11 +2022,7 @@ section {
 
 #service .container .content .banner .cards .card {
   width: 270px;
-  height: 400px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform: perspective(1000px);
-          transform: perspective(1000px);
+  height: 500px;
   background: #ffffff;
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -2034,9 +2030,15 @@ section {
 }
 
 #service .container .content .banner .cards .card .card_container {
-  padding: 14px 37px;
-  -webkit-transform: translateZ(20px);
-          transform: translateZ(20px);
+  padding: 14px 37px 30px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #service .container .content .banner .cards .card .card_container .card_img {
@@ -2054,12 +2056,35 @@ section {
   margin-bottom: 9px;
 }
 
+#service .container .content .banner .cards .card .card_container .card_text {
+  line-height: 110.52%;
+}
+
+#service .container .content .banner .cards .card .card_container .card_text hr {
+  margin: 15px 0 5px;
+  width: 55%;
+}
+
+#service .container .content .banner .cards .card .card_container .card_text p {
+  font-size: 12px;
+}
+
 #service .container .content .banner .cards .card .card_container .card_text li {
   list-style: none;
   font-weight: 400;
   font-size: 14px;
-  line-height: 182.52%;
+  line-height: 100%;
   color: var(--text-color);
+}
+
+#service .container .content .banner .cards .card .card_container .card_text li:not(:first-of-type) {
+  margin-top: 7px;
+}
+
+#service .container .content .banner .cards .card .card_container span {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 #service .container .content .banner .cards .card .card_container a {
@@ -2071,6 +2096,8 @@ section {
   text-transform: uppercase;
   color: #ffffff;
   display: inline-block;
+  position: relative;
+  bottom: 0;
   width: 100%;
   height: 29px;
   background: var(--main-blue);
@@ -2187,20 +2214,26 @@ section {
     margin-left: 100px;
   }
   #service .container .content .banner .cards .card {
-    width: 320px;
-    height: 400px;
+    min-width: 320px;
+    height: 500px;
     background: #ffffff;
     -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
   }
   #service .container .content .banner .cards .card .card_container {
-    padding: 14px 37px;
-    -webkit-transform: translateZ(20px);
-            transform: translateZ(20px);
+    padding: 14px 37px 30px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #service .container .content .banner .cards .card .card_container .card_img {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
   }
   #service .container .content .banner .cards .card .card_container .card_title {
     font-style: normal;
@@ -2215,7 +2248,6 @@ section {
     list-style: none;
     font-weight: 400;
     font-size: 15px;
-    line-height: 182.52%;
     color: var(--text-color);
   }
   #service .container .content .banner .cards .card .card_container a {
@@ -2255,26 +2287,24 @@ section {
     padding: 80px 20px 0;
   }
   #service .container .content .banner .cards .card {
-    width: 260px;
-    height: 380px;
+    min-width: 150px;
+    height: 450px;
     border-radius: 15px;
   }
   #service .container .content .banner .cards .card .card_container {
-    padding: 13px 25px;
-    -webkit-transform: translateZ(20px);
-            transform: translateZ(20px);
+    padding: 13px 25px 15px;
   }
   #service .container .content .banner .cards .card .card_container .card_img {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
   #service .container .content .banner .cards .card .card_container .card_title {
     font-weight: 800;
     font-size: 15px;
-    margin-bottom: 9px;
+    margin-bottom: 0px;
   }
   #service .container .content .banner .cards .card .card_container .card_text li {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 13px;
   }
   #service .container .content .banner .cards .card .card_container a {
     font-weight: 800;
@@ -3478,7 +3508,7 @@ section {
 }
 
 #quote .container .form .form_gird textarea {
-  grid-column: span 3;
+  grid-column: span 2;
   resize: vertical;
   min-height: 100px;
   border: 2px solid var(--main-blue);
@@ -3649,7 +3679,7 @@ section {
     margin-top: 30px;
   }
   #quote .container .form .form_gird textarea {
-    grid-column: span 3;
+    grid-column: span 2;
     min-height: 100px;
     border: 2px solid var(--main-blue);
     outline: 0;
