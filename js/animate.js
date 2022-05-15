@@ -70,6 +70,11 @@ document.addEventListener('DOMContentLoaded', function () {
       observer: true,
       observerParents: true,
 
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
