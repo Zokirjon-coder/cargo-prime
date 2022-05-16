@@ -3424,11 +3424,11 @@ section {
 }
 
 .swiper-slide .slide_conatiner .avatar {
-  min-width: 85px;
-  min-height: 285px;
+  min-width: 185px;
+  min-height: 185px;
   background: -webkit-gradient(linear, left top, right top, from(#47abd8), to(#0071bc));
   background: linear-gradient(to right, #47abd8, #0071bc);
-  border-radius: 15px;
+  border-radius: 50%;
 }
 
 .swiper-slide .slide_conatiner .slide_content {
