@@ -1706,17 +1706,15 @@ section {
           top: 0;
           background: var(--second-blue);
           border-radius: 30px;
-          p {
-            color: #000000;
-          }
         }
         .requirement {
           display: none;
           position: absolute;
           width: 100%;
           bottom: 35px;
+          text-align: center;
           p {
-            color: #000000;
+            color: var(--text-color);
           }
         }
         .cards {
@@ -1756,6 +1754,7 @@ section {
                   width: 55%;
                 }
                 p {
+                  color: var(--text-color);
                   font-size: 12px;
                 }
               }
@@ -3259,14 +3258,14 @@ section {
   width: 500px;
   height: 300px;
   text-align: center;
-  transform: scale(0.5);
+  transform: scale(0.5) !important;
   transition: 0.8s;
   background: white;
   border-radius: 20px;
   filter: drop-shadow(0 0 11.1px white);
 }
 .swiper-slide-active {
-  transform: scale(1);
+  transform: scale(1) !important;
 }
 
 .swiper-slide {
@@ -3282,13 +3281,14 @@ section {
     }
 
     .avatar {
-      min-width: 185px;
-      min-height: 185px;
+      min-width: 85px;
+      min-height: 285px;
       background: linear-gradient(to right, #47abd8, #0071bc);
-      border-radius: 50%;
+      border-radius: 15px;
     }
     .slide_content {
       text-align: left;
+      color: var(--text-color);
       .name {
         font-weight: 700;
         font-size: 17px;
@@ -3296,7 +3296,7 @@ section {
       }
       .slide_text {
         font-weight: 400;
-        font-size: 17px;
+        font-size: 13px;
         margin-bottom: 15px;
         line-height: 1.2;
       }
@@ -4830,11 +4830,11 @@ footer {
   .swiper-slide {
     width: 240px;
     height: 160px;
-    transform: scale(0.8);
+    transform: scale(0.8) !important;
     border-radius: 15px;
   }
   .swiper-slide-active {
-    transform: scale(1);
+    transform: scale(1) !important;
     margin: 0 15px;
   }
 

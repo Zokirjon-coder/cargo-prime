@@ -2007,19 +2007,16 @@ section {
   border-radius: 30px;
 }
 
-#service .container .content .banner .fon p {
-  color: #000000;
-}
-
 #service .container .content .banner .requirement {
   display: none;
   position: absolute;
   width: 100%;
   bottom: 35px;
+  text-align: center;
 }
 
 #service .container .content .banner .requirement p {
-  color: #000000;
+  color: var(--text-color);
 }
 
 #service .container .content .banner .cards {
@@ -2081,6 +2078,7 @@ section {
 }
 
 #service .container .content .banner .cards .card .card_container .card_text p {
+  color: var(--text-color);
   font-size: 12px;
 }
 
@@ -3391,8 +3389,8 @@ section {
   width: 500px;
   height: 300px;
   text-align: center;
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  -webkit-transform: scale(0.5) !important;
+          transform: scale(0.5) !important;
   -webkit-transition: 0.8s;
   transition: 0.8s;
   background: white;
@@ -3402,8 +3400,8 @@ section {
 }
 
 .swiper-slide-active {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: scale(1) !important;
+          transform: scale(1) !important;
 }
 
 .swiper-slide .slide_conatiner {
@@ -3426,15 +3424,16 @@ section {
 }
 
 .swiper-slide .slide_conatiner .avatar {
-  min-width: 185px;
-  min-height: 185px;
+  min-width: 85px;
+  min-height: 285px;
   background: -webkit-gradient(linear, left top, right top, from(#47abd8), to(#0071bc));
   background: linear-gradient(to right, #47abd8, #0071bc);
-  border-radius: 50%;
+  border-radius: 15px;
 }
 
 .swiper-slide .slide_conatiner .slide_content {
   text-align: left;
+  color: var(--text-color);
 }
 
 .swiper-slide .slide_conatiner .slide_content .name {
@@ -3445,7 +3444,7 @@ section {
 
 .swiper-slide .slide_conatiner .slide_content .slide_text {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 13px;
   margin-bottom: 15px;
   line-height: 1.2;
 }
@@ -4702,13 +4701,13 @@ footer .container .links .text-2 {
   .swiper-slide {
     width: 240px;
     height: 160px;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: scale(0.8) !important;
+            transform: scale(0.8) !important;
     border-radius: 15px;
   }
   .swiper-slide-active {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1) !important;
+            transform: scale(1) !important;
     margin: 0 15px;
   }
   .swiper-slide .slide_conatiner {
