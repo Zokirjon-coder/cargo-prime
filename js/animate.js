@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
       observerParents: true,
 
       autoplay: {
-        delay: 5000,
+        delay: 7000,
         disableOnInteraction: false,
       },
 
