@@ -2034,7 +2034,7 @@ section {
 
 #service .container .content .banner .cards .card {
   width: 270px;
-  height: 500px;
+  height: 400px;
   background: #ffffff;
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -2228,7 +2228,7 @@ section {
   }
   #service .container .content .banner .cards .card {
     min-width: 320px;
-    height: 500px;
+    height: 420px;
     background: #ffffff;
     -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -2301,7 +2301,7 @@ section {
   }
   #service .container .content .banner .cards .card {
     min-width: 150px;
-    height: 450px;
+    height: 360px;
     border-radius: 15px;
   }
   #service .container .content .banner .cards .card .card_container {
@@ -2627,6 +2627,12 @@ section {
   color: var(--text-color);
 }
 
+#choose .container .banner .slider .params > p:first-child {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+}
+
 #choose .container .banner .slider .images {
   overflow: hidden;
 }
@@ -2704,6 +2710,11 @@ section {
     text-transform: uppercase;
     color: var(--text-color);
   }
+  #choose .container .banner .slider .params > p:first-child {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -2731,6 +2742,11 @@ section {
     top: 50px;
     left: -50px;
     font-size: 14px;
+  }
+  #choose .container .banner .slider .params > p:first-child {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
   }
   #choose .container .banner .slidenavBtns {
     padding-left: 80px;
@@ -2763,6 +2779,11 @@ section {
     left: -40px;
     font-size: 13px;
   }
+  #choose .container .banner .slider .params > p:first-child {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 17px;
+  }
   #choose .container .banner .slidenavBtns {
     padding-left: 70px;
   }
@@ -2792,6 +2813,11 @@ section {
     top: 50px;
     left: -50px;
     font-size: 12px;
+  }
+  #choose .container .banner .slider .params > p:first-child {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
   }
   #choose .container .banner .slidenavBtns {
     padding-left: 50px;
@@ -2823,6 +2849,11 @@ section {
     top: 10px;
     left: -50px;
     font-size: 12px;
+  }
+  #choose .container .banner .slider .params > p:first-child {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
   }
   #choose .container .banner .slidenavBtns {
     padding-left: 30px;
@@ -2857,6 +2888,11 @@ section {
     right: 0;
     font-size: 10px;
   }
+  #choose .container .banner .slider .params > p:first-child {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+  }
   #choose .container .banner .slidenavBtns {
     padding-left: 50px;
   }
@@ -2884,6 +2920,11 @@ section {
     left: auto;
     right: -5px;
     font-size: 9px;
+  }
+  #choose .container .slider .params > p:first-child {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
   }
   #choose .container .slidenavBtns {
     padding-left: 50px;
@@ -3250,7 +3291,7 @@ section {
 
 #info .testimonials_container {
   background: #8fdefd;
-  padding: 70px 10vw 100px;
+  padding: 70px 10vw 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3284,7 +3325,7 @@ section {
 
 @media screen and (max-width: 1440px) {
   #info .testimonials_container {
-    padding: 80px 10vw 80px;
+    padding: 80px 10vw 40px;
   }
   #info .testimonials_container .title {
     font-size: 25px;
@@ -3294,7 +3335,7 @@ section {
 
 @media screen and (max-width: 900px) {
   #info .testimonials_container {
-    padding: 70px 10vw 70px;
+    padding: 70px 10vw 30px;
   }
   #info .testimonials_container .title {
     font-size: 20px;
@@ -3304,7 +3345,7 @@ section {
 
 @media screen and (max-width: 768px) {
   #info .testimonials_container {
-    padding: 5vw 0 5vw;
+    padding: 5vw 0 3vw;
   }
   #info .testimonials_container .title {
     font-size: 18px;
@@ -3327,7 +3368,7 @@ section {
 }
 
 .swiper {
-  max-width: 1250px;
+  max-width: 1450px;
   width: 100%;
 }
 
@@ -3398,8 +3439,8 @@ section {
 .swiper-slide {
   width: 372.18px;
   text-align: center;
-  -webkit-transform: scale(0.5) !important;
-          transform: scale(0.5) !important;
+  -webkit-transform: scale(0.8) !important;
+          transform: scale(0.8) !important;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background: white;
@@ -3409,8 +3450,8 @@ section {
 }
 
 .swiper-slide-active {
-  -webkit-transform: scale(1) !important;
-          transform: scale(1) !important;
+  -webkit-transform: scale(1.2) !important;
+          transform: scale(1.2) !important;
 }
 
 .swiper-slide .slide_conatiner {

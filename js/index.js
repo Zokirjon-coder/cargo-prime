@@ -64,11 +64,11 @@ const wrapperHeight = wrapper.scrollHeight;
 const chatBox = document.querySelector('.chat');
 document.addEventListener('scroll', (e) => {
   const scrollY = e.srcElement.scrollingElement.scrollTop;
-  console.log(footerHeight);
+  // console.log(footerHeight);
   if (wrapperHeight - footerHeight * 3 < scrollY) {
-    chatBox.style = 'opacity: 0';
+    chatBox.style = 'opacity: 0; pointer-events: none';
   } else {
-    chatBox.style = 'opacity: 1';
+    chatBox.style = 'opacity: 1; pointer-events: all';
   }
 
   sections.forEach((section) => {
@@ -131,32 +131,34 @@ const dataSlider = [
     id: 1,
     // image: img1,
     param: [
-      { id: 1, param: 'Governed at 70 mph' },
-      { id: 2, param: 'Inverter' },
-      { id: 3, param: 'Automatic' },
-      { id: 4, param: 'Combo sleeper' },
+      { id: 1, param: 'freightliner' },
+      { id: 2, param: 'Governed at 70 mph' },
+      { id: 3, param: 'Inverter' },
+      { id: 4, param: 'Automatic' },
+      { id: 5, param: 'Combo sleeper' },
     ],
   },
   {
     id: 2,
     // image: img2,
     param: [
-      { id: 1, param: 'Governed at 70 mph' },
-      { id: 2, param: 'Inverter' },
-      { id: 3, param: 'Automatic' },
-      { id: 4, param: 'Combo sleeper' },
+      { id: 1, param: 'freightliner' },
+      { id: 2, param: 'Governed at 70 mph' },
+      { id: 3, param: 'Inverter' },
+      { id: 4, param: 'Automatic' },
+      { id: 5, param: 'Combo sleeper' },
     ],
   },
-  {
-    id: 3,
-    // image: img3,
-    param: [
-      { id: 1, param: 'Governed at 70 mph' },
-      { id: 2, param: 'Inverter' },
-      { id: 3, param: 'Automatic' },
-      { id: 4, param: 'Combo sleeper' },
-    ],
-  },
+  // {
+  //   id: 3,
+  //   // image: img3,
+  //   param: [
+  //     { id: 1, param: 'Governed at 70 mph' },
+  //     { id: 2, param: 'Inverter' },
+  //     { id: 3, param: 'Automatic' },
+  //     { id: 4, param: 'Combo sleeper' },
+  //   ],
+  // },
 ];
 
 function setImageSlide(data) {

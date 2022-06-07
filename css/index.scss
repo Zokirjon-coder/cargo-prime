@@ -1724,7 +1724,7 @@ section {
           padding: 80px 50px 0;
           .card {
             width: 270px;
-            height: 500px;
+            height: 400px;
             background: #ffffff;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
             border-radius: 15px;
@@ -1744,6 +1744,7 @@ section {
                 font-size: 15px;
                 line-height: 174.02%;
                 text-transform: uppercase;
+                // text-align: center;
                 color: var(--text-color);
                 margin-bottom: 9px;
               }
@@ -1874,7 +1875,7 @@ section {
             padding: 80px 50px 0;
             .card {
               min-width: 320px;
-              height: 500px;
+              height: 420px;
               background: #ffffff;
               box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
               border-radius: 15px;
@@ -1945,7 +1946,7 @@ section {
             padding: 80px 20px 0;
             .card {
               min-width: 150px;
-              height: 450px;
+              height: 360px;
               border-radius: 15px;
               .card_container {
                 padding: 13px 25px 15px;
@@ -2283,6 +2284,12 @@ section {
           line-height: 182.52%;
           text-transform: uppercase;
           color: var(--text-color);
+
+          & > p:first-child {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 18px;
+          }
         }
         .images {
           overflow: hidden;
@@ -2344,6 +2351,12 @@ section {
             line-height: 182.52%;
             text-transform: uppercase;
             color: var(--text-color);
+
+            & > p:first-child {
+              text-transform: uppercase;
+              font-weight: 700;
+              font-size: 18px;
+            }
           }
         }
       }
@@ -2376,6 +2389,11 @@ section {
             top: 50px;
             left: -50px;
             font-size: 14px;
+            & > p:first-child {
+              text-transform: uppercase;
+              font-weight: 700;
+              font-size: 18px;
+            }
           }
         }
         .slidenavBtns {
@@ -2411,6 +2429,11 @@ section {
             top: 40px;
             left: -40px;
             font-size: 13px;
+            & > p:first-child {
+              text-transform: uppercase;
+              font-weight: 700;
+              font-size: 17px;
+            }
           }
         }
         .slidenavBtns {
@@ -2445,6 +2468,12 @@ section {
             top: 50px;
             left: -50px;
             font-size: 12px;
+
+            & > p:first-child {
+              text-transform: uppercase;
+              font-weight: 700;
+              font-size: 16px;
+            }
           }
         }
         .slidenavBtns {
@@ -2480,6 +2509,12 @@ section {
             top: 10px;
             left: -50px;
             font-size: 12px;
+
+            & > p:first-child {
+              text-transform: uppercase;
+              font-weight: 700;
+              font-size: 16px;
+            }
           }
         }
         .slidenavBtns {
@@ -2517,6 +2552,12 @@ section {
             left: auto;
             right: 0;
             font-size: 10px;
+
+            & > p:first-child {
+              text-transform: uppercase;
+              font-weight: 700;
+              font-size: 14px;
+            }
           }
         }
         .slidenavBtns {
@@ -2551,6 +2592,12 @@ section {
             left: auto;
             right: -5px;
             font-size: 9px;
+
+            & > p:first-child {
+              text-transform: uppercase;
+              font-weight: 700;
+              font-size: 12px;
+            }
           }
         }
         .slidenavBtns {
@@ -3138,7 +3185,7 @@ section {
 
   .testimonials_container {
     background: #8fdefd;
-    padding: 70px 10vw 100px;
+    padding: 70px 10vw 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3160,7 +3207,7 @@ section {
       text-transform: uppercase;
     }
     @media screen and (max-width: 1440px) {
-      padding: 80px 10vw 80px;
+      padding: 80px 10vw 40px;
 
       .title {
         font-size: 25px;
@@ -3168,7 +3215,7 @@ section {
       }
     }
     @media screen and (max-width: 900px) {
-      padding: 70px 10vw 70px;
+      padding: 70px 10vw 30px;
 
       .title {
         font-size: 20px;
@@ -3177,7 +3224,7 @@ section {
     }
     @media screen and (max-width: 768px) {
       // padding: 60px 0 60px;
-      padding: 5vw 0 5vw;
+      padding: 5vw 0 3vw;
       .title {
         font-size: 18px;
         margin-bottom: 35px;
@@ -3202,7 +3249,7 @@ section {
   }
 }
 .swiper {
-  max-width: 1250px;
+  max-width: 1450px;
   width: 100%;
   // padding-bottom: 20px !important;
 }
@@ -3266,14 +3313,14 @@ section {
   width: 372.18px;
   // height: 300px;
   text-align: center;
-  transform: scale(0.5) !important;
+  transform: scale(0.8) !important;
   transition: 0.5s;
   background: white;
   box-shadow: 0px 2.86276px 2.86276px rgba(0, 0, 0, 0.25);
   border-radius: 10.7354px;
 }
 .swiper-slide-active {
-  transform: scale(1) !important;
+  transform: scale(1.2) !important;
 }
 
 .swiper-slide {

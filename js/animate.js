@@ -59,10 +59,32 @@ document.addEventListener('DOMContentLoaded', function () {
     // VanillaTilt.init(document.querySelectorAll(".slide_conatiner"));
 
     // for slider
+    const widthFinde = (w) => {
+      let slideBeatween = 0;
+      if (w < 800) {
+        slideBeatween = 0;
+      } else if (w < 900) {
+        slideBeatween = 15;
+      } else if (w >= 900 && w < 1000) {
+        slideBeatween = 25;
+      } else if (w >= 1000 && w < 1400) {
+        slideBeatween = 50;
+      } else if (w >= 1400 && w < 1600) {
+        slideBeatween = 70;
+      } else {
+        slideBeatween = 100;
+      }
+      return slideBeatween;
+    };
+    let slideBeatween = widthFinde(window.innerWidth);
+    window.addEventListener('resize', (e) => {
+      let w = e.target.innerWidth;
+      slideBeatween = widthFinde(w);
+    });
 
     new Swiper('.mySwiper', {
       slidesPerView: 1,
-      spaceBetween: 0,
+      spaceBetween: slideBeatween,
       slidesPerView: 'auto',
       centeredSlides: true,
       grubCursor: true,

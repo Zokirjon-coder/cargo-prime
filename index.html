@@ -723,16 +723,9 @@
                       <li>Weekly settlement direct deposit</li>
                       <li>New vehicles equipped with modern technology</li>
                       <li>Consistent, steady work & home time friendly.</li>
-                      <hr />
-                      <p>Requirements:</p>
-                      <p>
-                        Valid and current Class A CDL Minimum of 25 years of age
-                        Must have 1-year verifiable tractor trailer driving
-                        experience
-                      </p>
                     </div>
                     <span></span>
-                    <a href="#">apply now</a>
+                    <a href="#toquote">apply now</a>
                   </div>
                 </div>
                 <div class="card gs_reveal gs_reveal_fromBottom">
@@ -772,16 +765,9 @@
                       <li>Consistent, steady work & home time friendly</li>
                       <li>Friendly and professional team</li>
                       <li>I-pass, Pre-pass, Fuel cards.</li>
-                      <hr />
-                      <p>Requirements:</p>
-                      <p>
-                        Valid and current Class A CDL Minimum of 25 years of age
-                        Must have 1-year verifiable tractor trailer driving
-                        experience
-                      </p>
                     </div>
                     <span></span>
-                    <a href="#">apply now</a>
+                    <a href="#toquote">apply now</a>
                   </div>
                 </div>
                 <div class="card gs_reveal gs_reveal_fromBottom">
@@ -821,21 +807,14 @@
                       <li>Weekly settlement direct deposit</li>
                       <li>Company supplied trailers</li>
                       <li>Friendly and professional team</li>
-                      <hr />
-                      <p>Requirements:</p>
-                      <p>
-                        Valid and current Class A CDL Minimum of 25 years of age
-                        Must have 1-year verifiable tractor trailer driving
-                        experience
-                      </p>
                     </div>
                     <span></span>
-                    <a href="#">apply now</a>
+                    <a href="#toquote">apply now</a>
                   </div>
                 </div>
                 <span></span>
               </div>
-              <div class="requirement">
+              <!-- <div class="requirement">
                 <span></span>
                 <p>
                   Requirements: Valid and current Class A CDL Minimum of 25
@@ -843,7 +822,7 @@
                   driving experience
                 </p>
                 <span></span>
-              </div>
+              </div> -->
               <div class="slidenavBtns">
                 <button class="prev gs_reveal gs_reveal_fromBottom">
                   <img src="./assets/icons/left-arrow.svg" alt="" />
@@ -872,6 +851,7 @@
             <div class="slider">
               <div class="slider_container">
                 <div class="params">
+                  <p class="gs_reveal gs_reveal_fromBottom">freightliner</p>
                   <p class="gs_reveal gs_reveal_fromBottom">
                     Governed at 70 mph
                   </p>
@@ -882,7 +862,7 @@
                 <div class="images gs_reveal gs_reveal_fromBottom">
                   <img src="./assets/images/img1.png" disabled="flase" alt="" />
                   <img src="./assets/images/img2.png" disabled="true" alt="" />
-                  <img src="./assets/images/img3.png" disabled="true" alt="" />
+                  <!-- <img src="./assets/images/img3.png" disabled="true" alt="" /> -->
                 </div>
               </div>
             </div>
@@ -1333,32 +1313,36 @@
               </div>
             </div>
           </div>
-          <div class="form">
+          <form onsubmit="sendM1(); reset(); return false;" class="form form1">
             <div class="form_gird">
               <div class="grid_title gs_reveal gs_reveal_fromBottom">
                 <h1>personal data</h1>
               </div>
               <input
+                required
                 type="text"
                 placeholder="Name"
-                class="form_name gs_reveal gs_reveal_fromBottom"
+                class="mess1-name form_name gs_reveal gs_reveal_fromBottom"
               />
               <input
+                required
                 type="text"
+                minlength="5"
                 placeholder="Phone"
-                class="form_phone gs_reveal gs_reveal_fromBottom"
+                class="mess1-phone form_phone gs_reveal gs_reveal_fromBottom"
               />
               <input
-                type="text"
+                required
+                type="email"
                 placeholder="E-mail"
-                class="form_email gs_reveal gs_reveal_fromBottom"
+                class="mess1-mail form_email gs_reveal gs_reveal_fromBottom"
               />
               <div class="select-div gs_reveal gs_reveal_fromBottom">
-                <select required class="" name="" id="">
+                <select required class="mess1-exper" name="" id="">
                   <option selected disabled hidden value="">
                     Years Of Experience
                   </option>
-                  <option value="">0 - 1 year</option>
+                  <option value="0-1">0 - 1 year</option>
                   <option value="1-2">1 - 2 years</option>
                   <option value="2-3">2 - 3 years</option>
                   <option value="3-5">3 - 5 years</option>
@@ -1368,68 +1352,82 @@
                 <img src="./assets/icons/select_arrow.svg" alt="" />
               </div>
               <div class="select-div gs_reveal gs_reveal_fromBottom">
-                <select required class="" name="" id="">
+                <select required class="mess1-posi" name="" id="">
                   <option selected disabled hidden value="">
                     Job Position
                   </option>
-                  <option value="">Company Driver</option>
-                  <option value="">Lease Driver</option>
-                  <option value="">Owner Operator</option></select
+                  <option value="Company Driver">Company Driver</option>
+                  <option value="Lease Driver">Lease Driver</option>
+                  <option value="Owner Operator">Owner Operator</option></select
                 ><img src="./assets/icons/select_arrow.svg" alt="" />
               </div>
               <div class="grid_title mt-15 gs_reveal gs_reveal_fromBottom">
                 <h1>Comments / Questions (optional)</h1>
               </div>
               <textarea
+                required
+                minlength="15"
                 placeholder="Notes"
-                class="gs_reveal gs_reveal_fromBottom"
+                class="mess1-notes gs_reveal gs_reveal_fromBottom"
               ></textarea>
-              <button class="form_btn gs_reveal gs_reveal_fromBottom">
+              <button
+                type="submit"
+                class="form_btn gs_reveal gs_reveal_fromBottom"
+              >
                 Submit
               </button>
             </div>
-          </div>
+          </form>
         </div>
         <span id="getQuote"></span>
         <div class="container">
           <div class="title gs_reveal gs_reveal_fromBottom">get a quote</div>
-          <div class="form">
+          <form onsubmit="sendM2(); reset(); return false;" class="form form2">
             <div class="form_gird">
               <div class="grid_title gs_reveal gs_reveal_fromBottom">
                 <h1>personal data</h1>
               </div>
               <input
+                required
                 type="text"
                 placeholder="Name"
-                class="form_name gs_reveal gs_reveal_fromBottom"
+                class="mess2-name form_name gs_reveal gs_reveal_fromBottom"
               />
               <input
+                required
                 type="text"
+                minlength="5"
                 placeholder="Phone"
-                class="form_phone gs_reveal gs_reveal_fromBottom"
+                class="mess2-phone form_phone gs_reveal gs_reveal_fromBottom"
               />
               <input
-                type="text"
+                required
+                type="email"
                 placeholder="E-mail"
-                class="form_email gs_reveal gs_reveal_fromBottom"
+                class="mess2-mail form_email gs_reveal gs_reveal_fromBottom"
               />
               <input
+                required
                 type="text"
                 placeholder="Subject"
-                class="form_cname gs_reveal gs_reveal_fromBottom"
+                class="mess2-subject form_cname gs_reveal gs_reveal_fromBottom"
               />
               <div class="grid_title mt-15 gs_reveal gs_reveal_fromBottom">
                 <h1>Comments / Questions (optional)</h1>
               </div>
               <textarea
+                required
                 placeholder="Notes"
-                class="gs_reveal gs_reveal_fromBottom"
+                class="mess2-notes gs_reveal gs_reveal_fromBottom"
               ></textarea>
-              <button class="form_btn gs_reveal gs_reveal_fromBottom">
+              <button
+                type="submit"
+                class="form_btn gs_reveal gs_reveal_fromBottom"
+              >
                 Submit
               </button>
             </div>
-          </div>
+          </form>
         </div>
       </section>
       <footer>
@@ -1615,10 +1613,12 @@
     </div>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <!-- <script src="./js/swiper.js"></script> -->
 
     <script src="./js/index.js"></script>
     <script src="./js/animate.js"></script>
+    <script src="./js/sendmessage.js"></script>
   </body>
 </html>
