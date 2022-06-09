@@ -990,7 +990,7 @@
     font-size: 16px;
   }
   .float_menu .menu_container .menu_body .menu_links > * + * {
-    margin-left: 5px;
+    margin-top: 5px;
   }
 }
 
@@ -1837,8 +1837,22 @@ section {
   width: 490px;
 }
 
+#story .container .video video,
 #story .container .video iframe {
   width: 100%;
+  height: auto;
+}
+
+#story .container .video iframe,
+#story .container .video iframe * {
+  outline: none !important;
+  border: none !important;
+  background: white;
+}
+
+#story .container .video iframe div[aria-label='Pop-out'],
+#story .container .video iframe * div[aria-label='Pop-out'] {
+  display: none;
 }
 
 @media screen and (min-width: 1440px) {
