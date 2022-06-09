@@ -160,7 +160,7 @@ const dataSlider = [
   //   ],
   // },
 ];
-
+numberLenght.innerHTML = dataSlider.length;
 function setImageSlide(data) {
   const images = slide.querySelectorAll('img');
   const { id, param } = data;
