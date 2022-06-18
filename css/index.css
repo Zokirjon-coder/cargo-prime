@@ -3506,9 +3506,21 @@ section {
 .swiper-slide .slide_conatiner .left .avatar {
   min-width: 109px;
   min-height: 109px;
-  background: -webkit-gradient(linear, left top, right top, from(#47abd8), to(#0071bc));
-  background: linear-gradient(to right, #47abd8, #0071bc);
   border-radius: 50%;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.swiper-slide .slide_conatiner .left .avatar.naiya {
+  background: url("../assets/images/naiya_thomas.jpg");
+}
+
+.swiper-slide .slide_conatiner .left .avatar.hub {
+  background: url("../assets/images/hub-group.jpg");
+}
+
+.swiper-slide .slide_conatiner .left .avatar.xpress {
+  background: url("../assets/images/xpress.jpg");
 }
 
 .swiper-slide .slide_conatiner .left .socials {

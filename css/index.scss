@@ -3355,8 +3355,19 @@ section {
       .avatar {
         min-width: 109px;
         min-height: 109px;
-        background: linear-gradient(to right, #47abd8, #0071bc);
+        // background: linear-gradient(to right, #47abd8, #0071bc);
         border-radius: 50%;
+        background-size: cover !important;
+        background-position: center !important;
+        &.naiya{
+          background: url('../assets/images/naiya_thomas.jpg');
+        }
+        &.hub{
+          background: url('../assets/images/hub-group.jpg');
+        }
+        &.xpress{
+          background: url('../assets/images/xpress.jpg');
+        }
       }
 
       .socials {
